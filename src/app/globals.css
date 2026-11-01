@@ -1,0 +1,429 @@
+@import "tailwindcss";
+
+/* =========================================================================
+   EYELIKE — „Durch das Objektiv"
+   Schwarz ist die Bühne, Weiß die Stimme, Rot das seltene Signal.
+   Eine Schriftfamilie (Helvetica Neue), geführt über Gewicht & Tracking.
+   ========================================================================= */
+
+@theme {
+  /* ---- Bühne & Oberflächen ---- */
+  --color-stage: #050506;        /* Grundfläche der ganzen Seite */
+  --color-stage-deep: #000000;   /* tiefste Ebene (Hero, Objektiv) */
+  --color-surface: #0b0b0d;      /* leicht erhobene Fläche */
+  --color-surface-2: #131316;    /* Karten/Eingaben */
+
+  /* ---- Tinte (Kontrast geprüft auf --color-stage) ---- */
+  --color-ink: #ffffff;          /* Primärtext, „LIKE" */
+  --color-ink-soft: #d6d6da;     /* Sekundär-Headlines       ~12:1 */
+  --color-ink-dim: #9ca0a6;      /* Fließtext sekundär        ~8:1  */
+  --color-ink-faint: #74777e;    /* Labels/Meta (≥14px)       ~4.3:1 */
+
+  /* ---- Linien ---- */
+  --color-line: rgba(255, 255, 255, 0.1);
+  --color-line-strong: rgba(255, 255, 255, 0.2);
+
+  /* ---- Signal (sparsam, ≤ ~5 % jeder Ansicht) ---- */
+  --color-signal: #e50914;       /* exakt aus dem Logo */
+  --color-signal-bright: #ff2a33;
+  --color-signal-deep: #b00610;
+
+  /* ---- Schrift: Helvetica Neue (Identität, System-Stack) ---- */
+  --font-sans: "Helvetica Neue", "Helvetica", "Inter var", "Arial", system-ui, sans-serif;
+
+  /* ---- Fluide Typo-Skala (1.25er Schritte, clamp) ---- */
+  --text-label: 0.72rem;
+  --text-body: 1.0625rem;
+  --text-lead: clamp(1.15rem, 0.9rem + 1vw, 1.5rem);
+  --text-title: clamp(1.5rem, 1.2rem + 1.4vw, 2.1rem);
+  --text-headline: clamp(2rem, 1.4rem + 3vw, 3.4rem);
+  --text-display: clamp(2.6rem, 1.4rem + 6vw, 5.5rem);
+  --text-mega: clamp(3.4rem, 1rem + 11vw, 9rem);
+
+  /* ---- z-index-Skala (semantisch) ---- */
+  --z-base: 0;
+  --z-sticky: 40;
+  --z-nav: 50;
+  --z-overlay: 60;
+  --z-atmosphere: 70;
+  --z-modal: 80;
+  --z-toast: 90;
+
+  /* ---- Easing ---- */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1);
+  --ease-out-quint: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out-cine: cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+:root {
+  color-scheme: dark;
+  --shell: clamp(1.25rem, 5vw, 5rem); /* horizontaler Seitenrand */
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  scrollbar-color: var(--color-line-strong) transparent;
+}
+
+body {
+  background-color: var(--color-stage);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  font-size: var(--text-body);
+  line-height: 1.65;
+  font-synthesis-weight: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+/* =================== Typografie-Utilities =================== */
+/* Display = kräftig, eng getrackt, ausbalanciert */
+.font-display {
+  font-weight: 700;
+  letter-spacing: -0.035em;
+  line-height: 0.95;
+  text-wrap: balance;
+  /* nur überlange Einzelwörter brechen, wenn sie sonst überlaufen würden —
+     KEIN proaktives hyphens:auto (das zerhackt normale Wörter wie „Produktion") */
+  overflow-wrap: break-word;
+}
+.font-display-light {
+  font-weight: 300;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  text-wrap: balance;
+}
+.font-title {
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  text-wrap: balance;
+}
+.text-pretty {
+  text-wrap: pretty;
+}
+/* Label = Caps, weites Tracking, nur für kurze Marken/Meta */
+.label {
+  text-transform: uppercase;
+  letter-spacing: 0.26em;
+  font-weight: 500;
+  font-size: var(--text-label);
+  line-height: 1;
+}
+.tabular {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum";
+}
+
+/* Schlüsselwort-Rot mit feinem Lichthof (das „Signal") */
+.signal-glow {
+  color: var(--color-signal);
+  text-shadow: 0 0 38px rgba(229, 9, 20, 0.45);
+}
+
+/* Logo-Punkt: Objektiv / REC-Signal mit dezentem Lichthof + Puls */
+.logo-dot {
+  box-shadow: 0 0 0 0 rgba(229, 9, 20, 0.55), 0 0 16px 1px rgba(229, 9, 20, 0.5);
+  animation: rec-pulse 3.4s var(--ease-in-out-cine) infinite;
+}
+@keyframes rec-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(229, 9, 20, 0.5), 0 0 12px 1px rgba(229, 9, 20, 0.4); }
+  50% { box-shadow: 0 0 0 3px rgba(229, 9, 20, 0), 0 0 22px 2px rgba(229, 9, 20, 0.65); }
+}
+
+@keyframes scrollbob {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(300%); }
+}
+
+/* Sucher-HUD: blinkender REC-Punkt */
+.vf-rec {
+  animation: vfblink 1.3s steps(2, jump-none) infinite;
+  box-shadow: 0 0 10px rgba(229, 9, 20, 0.6);
+}
+@keyframes vfblink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.25; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .vf-rec { animation: none; }
+}
+
+/* Dezenter Ken-Burns-Zoom (Hero-Showreel) */
+.ken-burns {
+  animation: kenburns 24s ease-in-out infinite alternate;
+}
+@keyframes kenburns {
+  from { transform: scale(1); }
+  to { transform: scale(1.09); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ken-burns { animation: none; }
+}
+
+/* =================== Marquee (Marken-Leiste) =================== */
+.marquee {
+  position: relative;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+}
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 38s linear infinite;
+}
+.marquee-group {
+  display: flex;
+  gap: var(--gap, 3rem);
+  padding-right: var(--gap, 3rem);
+}
+@keyframes marquee {
+  to { transform: translateX(-50%); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track { animation: none; }
+}
+
+/* =================== Panel-Sheen & Phone-Float =================== */
+.sheen {
+  background: linear-gradient(115deg, transparent 30%, rgba(255, 255, 255, 0.06) 48%, transparent 66%);
+  background-size: 250% 100%;
+  animation: sheen 6.5s var(--ease-in-out-cine) infinite;
+}
+@keyframes sheen {
+  0% { background-position: 160% 0; }
+  100% { background-position: -60% 0; }
+}
+.phone-float {
+  animation: phonefloat 5.5s var(--ease-in-out-cine) infinite;
+}
+@keyframes phonefloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .sheen, .phone-float { animation: none; }
+}
+
+/* Zeilen-Maske für kinetische Reveals */
+.reveal-mask {
+  display: block;
+  overflow: hidden;
+  padding-bottom: 0.08em; /* Unterlängen nicht abschneiden */
+}
+
+/* =================== Kinetische Wort-Reveals (KineticText) =================== */
+/* Wörter steigen gestaffelt auf und werden scharf; ohne JS voll sichtbar. */
+.kt-w {
+  display: inline-block;
+}
+.js .kinetic .kt-w {
+  opacity: 0;
+  transform: translateY(0.55em);
+  filter: blur(6px);
+  transition:
+    opacity 0.75s var(--ease-out-quint),
+    transform 0.75s var(--ease-out-quint),
+    filter 0.75s var(--ease-out-quint);
+  transition-delay: var(--kt-d, 0ms);
+  will-change: transform, filter;
+}
+.js .kinetic.is-in .kt-w {
+  opacity: 1;
+  transform: none;
+  filter: blur(0);
+}
+@media (prefers-reduced-motion: reduce) {
+  .js .kinetic .kt-w {
+    opacity: 1;
+    transform: none;
+    filter: none;
+    transition: none;
+  }
+}
+
+/* Shell / Inhaltsbreite */
+.shell {
+  margin-inline: auto;
+  padding-inline: var(--shell);
+  width: 100%;
+  max-width: 88rem;
+}
+.shell-narrow {
+  margin-inline: auto;
+  padding-inline: var(--shell);
+  width: 100%;
+  max-width: 60rem;
+}
+
+/* Hauchfeines Rauschen auf der Signal-Fläche (Play-Buttons etc.) */
+.hairline {
+  box-shadow: inset 0 0 0 1px var(--color-line);
+}
+
+::selection {
+  background: var(--color-signal);
+  color: #fff;
+  text-shadow: none;
+}
+:focus-visible {
+  outline: 2px solid var(--color-signal-bright);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* =================== Filmatmosphäre =================== */
+.grain-layer {
+  position: fixed;
+  inset: -120%;
+  z-index: var(--z-atmosphere);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.82' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  opacity: 0.04;
+  mix-blend-mode: overlay;
+  animation: grain 0.5s steps(2) infinite;
+  pointer-events: none;
+}
+@keyframes grain {
+  0% { transform: translate(0, 0); }
+  20% { transform: translate(-9%, 6%); }
+  40% { transform: translate(7%, -8%); }
+  60% { transform: translate(-6%, 9%); }
+  80% { transform: translate(8%, 4%); }
+  100% { transform: translate(0, 0); }
+}
+.vignette-layer {
+  position: fixed;
+  inset: 0;
+  z-index: var(--z-atmosphere);
+  pointer-events: none;
+  background: radial-gradient(125% 95% at 50% 42%, transparent 56%, rgba(0, 0, 0, 0.5) 100%);
+}
+
+/* =================== Lenis =================== */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+/* =================== Reveal (verbessert Default, blockt ihn nicht) =================== */
+[data-reveal] {
+  opacity: 1;
+}
+.js [data-reveal] {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.9s var(--ease-out-expo), transform 0.9s var(--ease-out-expo);
+}
+.js [data-reveal].is-in {
+  opacity: 1;
+  transform: none;
+}
+
+/* =================== Reduced motion =================== */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .grain-layer { animation: none; }
+  .js [data-reveal] { opacity: 1; transform: none; }
+}
+
+/* Touch-Geräte: blendendes Filmkorn nicht dauernd animieren (Compositor/Akku) */
+@media (pointer: coarse) {
+  .grain-layer { animation: none; }
+}
+
+/* (Gegensatz-Regler ausgemustert — Charakterfragen laufen über die Blitzrunde) */
+
+/* ---- Builder: Hue-Regler des eigenen Farb-Pickers ---- */
+.builder-hue {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 12px;
+  border-radius: 999px;
+  background: linear-gradient(
+    to right,
+    #f00 0%, #ff0 17%, #0f0 33%, #0ff 50%, #00f 67%, #f0f 83%, #f00 100%
+  );
+  outline: none;
+  cursor: pointer;
+}
+.builder-hue::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 22px;
+  width: 22px;
+  border-radius: 999px;
+  background: var(--color-ink);
+  border: 2px solid rgba(0, 0, 0, 0.55);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.6);
+}
+.builder-hue::-moz-range-thumb {
+  height: 22px;
+  width: 22px;
+  border-radius: 999px;
+  background: var(--color-ink);
+  border: 2px solid rgba(0, 0, 0, 0.55);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.6);
+}
+
+/* ---- Builder: Bewegung im Live-Mini-Mockup ---- */
+@keyframes mockup-pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+.mockup-pulse { animation: mockup-pulse 2.2s var(--ease-out-quart, ease) infinite; }
+
+@keyframes mockup-drift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.mockup-drift { animation: mockup-drift 5s ease-in-out infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  .mockup-pulse, .mockup-drift { animation: none; }
+}
+
+/* ---- Eventfilm: Image-Trail (Bilder folgen der Maus, blitzen auf) ---- */
+@keyframes trail-pop {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) rotate(var(--tr, 0deg)) scale(0.55);
+  }
+  14% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+    transform: translate(-50%, -50%) rotate(var(--tr, 0deg)) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -46%) rotate(var(--tr, 0deg)) scale(0.97);
+  }
+}
+.trail-img {
+  animation: trail-pop 1.2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+@media (prefers-reduced-motion: reduce) {
+  .trail-img { animation-duration: 2.4s; }
+}
