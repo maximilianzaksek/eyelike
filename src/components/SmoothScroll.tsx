@@ -9,6 +9,14 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 /* Smooth-Scroll (Lenis) fest mit GSAP ScrollTrigger verzahnt, damit gepinnte,
  * scrub-getriebene Sektionen flüssig laufen. Behandelt Anker und setzt bei
  * Route-Wechsel an den Anfang zurück. */
+
+/* Glättung als Interpolation statt als Nachlauf-Animation: Lenis holt pro Frame
+ * diesen Anteil der Reststrecke auf, statt nach jedem Rad-Impuls eine feste
+ * Dauer lang auszulaufen. Die Seite setzt sich dadurch sofort in Bewegung.
+ * Höher = direkter und härter, niedriger = weicher und träger.
+ * 0.1 ist Lenis-Standard (spürbar schleppend), 1 wäre ungeglättet. */
+const SCROLL_LERP = 0.22;
+
 let lenisInstance: Lenis | null = null;
 
 /* Robuster Scroll-Lock (Mobile-Menü etc.): funktioniert auch ohne Lenis
@@ -36,8 +44,7 @@ export function SmoothScroll({ children }: { children: ReactNode }) {
     }
 
     const lenis = new Lenis({
-      duration: 1.15,
-      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      lerp: SCROLL_LERP,
       anchors: true,
     });
     lenisInstance = lenis;

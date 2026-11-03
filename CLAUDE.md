@@ -62,3 +62,22 @@ bei Bedarf von Hand nachgezogen.
 - `EYELIKE OS – Freigaberegeln.md` – Sicherheits- und Freigabelogik
 - `EYELIKE OS – Lernnotizen.md` – kuratierte Quintessenz
 - `Lessons Learned/` – Protokoll je Sitzung
+
+## Website eyelike.agency
+
+**Arbeitskopie auf dem Mac** (hier läuft `npm run dev`):
+
+```
+/Users/hermes/Library/CloudStorage/Dropbox-EYELIKEMEDIA/EYELIKE MEDIA TEAM/Websites/eyelike
+```
+
+Derselbe Stand liegt in diesem Repository. Der Ordner liegt unter
+`~/Library/CloudStorage/`, deshalb kann Remote Control ihn nicht freigeben –
+Änderungen laufen über das Repository oder als neue Datei daneben in Dropbox.
+
+**Wichtig:** In Dropbox stehen daneben `eyelike Kopie` (Duplikat) und
+`eyelike agency` (Neuanfang Oktober). Maßgeblich ist allein `eyelike`.
+
+Technik: Next.js (App Router), Vercel-Projekt `eyelike`, Team
+`team_yDDJxUXWYdL1WZ84cfg7QxQv` – ein anderes Vercel-Konto als das in Claude
+verbundene. Fast alle Website-Texte stehen in `src/lib/content.ts`.
