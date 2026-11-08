@@ -1,3 +1,5 @@
+> **Hinweis (08.11.2026):** Hebel H1 („Hotel/Verpflegung nach Aufwand – nicht ziehen“) ist überholt. Max hat entschieden, Übernachtung & Verpflegung wie im Juni-Angebot zusätzlich auszuweisen, als Pauschale von 2.000 € (Gesamtpaket 51.000 € all-in). Plan B (SurTec beauftragt die lokalen Teams selbst) ist durch die Partner zu 800 €/Tag kein Hebel mehr. Maßgeblich ist `kalkulation-intern.md` (v2).
+
 # Perspektive C: Risiko, Vertrag, Verhandlung
 
 **Legende:** [A] steht für eine eigene Annahme oder Schätzung. EW ist der Erwartungswert, also Wahrscheinlichkeit mal mittlere Kostenwirkung. Einen internen Personentag (PT) setze ich mit 500–1.000 € an [A]; der Mentor rechnet mit 1.000 €. Die Partnertage stammen aus der Marktrecherche: China 2,5–5,5k, USA 3,5–6k. K1–K10 verweisen auf die Klauseln in Abschnitt 2.

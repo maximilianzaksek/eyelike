@@ -1,44 +1,55 @@
 # Rückfragen SurTec Imagefilm 2027
 
-**Stand:** 07.11.2026
+**Stand:** 08.11.2026
 
-Die Fragen haben drei Stufen:
-- **A:** an Max, vor dem Versand
-- **B:** an Sabrina, jetzt in Mail und Telefonat
-- **C:** an Sabrina, im Kickoff nach der Freigabe
+Die Fragen sind in drei Stufen geordnet:
+- **A** an Max, vor dem Versand
+- **B** an Sabrina, jetzt in Mail und Telefonat
+- **C** an Sabrina im Kickoff nach der Freigabe
 
-**Warum die Themenfragen erst in C stehen:** Sabrina hat am 05.11. gesagt, dass sie die inhaltliche Konzeption erst nach der Freigabe erarbeitet („Ich kann jetzt keine Konzeption erarbeiten, wenn ich noch gar nicht weiß, ob wir das Geld kriegen“). Deshalb legen wir die Kurzfilme jetzt über **Formate** fest (Typ A/B/C) und nicht über Themen. Die Themenfragen kommen in den Kickoff.
+**Warum die Themenfragen erst in C stehen:** Sabrina erarbeitet die inhaltliche Konzeption erst nach der Freigabe („Ich kann jetzt keine Konzeption erarbeiten, wenn ich noch gar nicht weiß, ob wir das Geld kriegen“). Deshalb legen wir die Kurzfilme jetzt über das **Format** fest (Typ A/B/C), nicht über das Thema.
 
 ---
 
-## A – An Max (vor Montag klären)
+## A – An Max
+
+### Geklärt am 08.11.
+
+- China und USA gehören zu den 6 Drehtagen.
+- Partner kosten je ca. 800 €/Tag. China reist mit dem Zug an, die USA mit Inlandsflug und Hotel.
+- Italien: mit dem Auto, 3 Personen (evtl. 4).
+- Hotel und Verpflegung kommen wie im Juni-Angebot zusätzlich, als Pauschale. Das Paket wird damit all-in.
+- Animation intern mit KI. Gegenüber dem Kunden heißt es nur „Animation“.
+- LinkedIn-Clips, Fotos, weitere Sprachen und Material-Recycling kommen on top. Die 49.000 € gelten nur für Imagefilm + 4 Kurzfilme.
+
+### Noch offen
 
 | # | Frage | Warum |
 |---|---|---|
-| 1 | **Partner China/USA:** Wen hast du konkret (Firma, Stadt)? Bekommst du bis Montag Richtpreise für einen Drehtag mit 2–3 Personen inkl. Technik? | Größter Kostenblock (Planwert 10k, Spanne 6–11,5k) |
-| 2 | **Team und Sätze:** Wer schneidet (intern/Freelancer)? Hat der Animator 2027 ca. 11 Tage frei? Mit welchem internen Satz rechnen wir für dich? | Entscheidet, ob die Lücke −5k oder −35k ist |
-| 3 | **Crew DE/IT:** Wer sind DoP und Kamera B, zu welchen Sätzen, wohnen sie in der Nähe der Bergstraße? Wer fliegt die Drohne? | 4 Drehtage ≈ 11–12k extern |
-| 4 | **Plan B:** Willst du im Telefonat anbieten, dass SurTec China/Inc. die lokalen Teams selbst beauftragen und unser Preis auf 40k sinkt? | Weniger Risiko, Sabrinas 9k-Problem verschwindet |
-| 5 | **Zusage am Donnerstag:** Was hast du außer „5 Videos, 49k, 6 Drehtage“ noch zugesagt, auch nebenbei (LinkedIn-Clips, Fotos, 9 Sprachen, Interviews „eine Stunde länger“)? | Das Angebot darf nicht hinter ihren Erwartungen zurückbleiben |
-| 6 | **Auftritt als Agentur:** Wer steht als zweite Ansprechperson (Projektleitung) in Angebot und CC? | Rat des Mentors: weg von „Max“ als Einzelperson |
-| 7 | **Leistungswert:** Sollen „Leistungswert rund 71k / Partnerschaftsnachlass 22k“ ins Angebot? | Preisanker für Folgeprojekte; zeigt dem Management die Vorleistung |
-| 8 | **Musiklizenz:** Welche Library-Lizenz haben wir, und deckt sie Konzernnutzung und Paid Social? | 0,5–2,5k |
-| 9 | **Liquidität:** Kannst du 10–15k vorfinanzieren, falls TR1 erst nach dem Dreh kommt? Wie viel ist bei SurTec insgesamt offen? | Bestimmt, wie hart „TR1 vor Drehbeginn“ sein muss |
-| 10 | **Format des Angebots:** Baust du das PDF in eurer eigenen Software, oder soll ich ein Layout liefern? | Versand Montag früh |
+| 1 | **Ist dein interner Satz von 900 €/PT okay?** Alternativen: 850 € wie dein Regie-Satz im Juni, oder 1.000 € wie der Mentor. | Selbstkosten 58,7k (700) / 62,5k (900) / 64,4k (1.000) |
+| 2 | **Partner:** Wo wohnt der China-Partner (Shanghai = 1 Nacht, Zug ca. 60 €)? Von wo fliegt der US-Partner? Ist Technik inkl. kleinem Licht-Kit im Tagessatz? Berechnen beide einen Reisetag? Hat der US-Partner einen Haftpflichtnachweis? | Partnerkosten 3.300 € inkl. Assistenz; China evtl. −270 € |
+| 3 | **Italien mit 3 oder 4 Personen?** Wer wäre die 4. Person (Licht/Ton-Assistenz)? | 4. Person: +1.400 € Honorar + 348 € Hotel/Verpflegung |
+| 4 | **Eigener Van oder Mietvan?** | Mietvan inkl. Diesel ca. 800 €, eigener Van etwas günstiger |
+| 5 | **Wer schneidet**, intern oder Freelancer? Hat der Animator 2027 ca. 8 Tage frei? | Künstlersozialabgabe, Liquidität, Planung |
+| 6 | **Preis für LinkedIn-Clips** (Platzhalter 450 €/Clip)? Im Juni-Modul M1 waren es 645 €/Clip. | Upsell in der Preisliste |
+| 7 | **Formulierung „ohne Gewinnaufschlag, regulärer Projektwert 72.000 €“** im Angebot freigeben, oder nur in der Mail? | geht ans Management |
+| 8 | **Zweite Ansprechperson** (Projektleitung) in Angebot und CC? | Auftritt als Agentur |
+| 9 | **Musiklizenz:** Deckt eure Library Konzernnutzung (Freudenberg) und Paid Social ab? | +0,5–1k Risiko |
+| 10 | **Angebots-PDF:** in eurer Software bauen, oder soll ich ein Layout liefern? | Versand Montag früh |
 
 ## B – An Sabrina, jetzt (Mail + Telefonat Montag)
 
-Die ersten drei stehen in der Mail, die übrigen klären wir im Telefonat.
+Die ersten drei Fragen stehen in der Mail, die übrigen klären wir im Telefonat.
 
-1. **6 Drehtage:** 4 mit unserem Team (3× Bergstraße, 1× Soliera) + je 1 Partnertag China/USA, passt das?
-2. **Standorte China/USA:**
+1. **Standorte China/USA:**
    - China: Hangzhou-Xiaoshan?
    - USA: Brunswick (OH), CHEMEON in Minden (NV) seit der Allianz 03/2026, oder Precote USA in Romeo (MI)?
-   - Wer ist vor Ort Ansprechpartner:in?
-3. **Bestellung über 49k:** Woher kommen die 9k, und wann? Die Mail sagt „Budget 2028“, das Telefonat „Dezember oder Januar“.
-4. **Einkauf und Rechnungen:** Bestellnummer, Rechnungsweg (Portal/E-Rechnung), Zahlungsziel nach Freudenberg-Einkaufsbedingungen?
-5. **Freigabe:** Wer gibt die Filme frei? Du, der CEO, FCS-Kommunikation oder Freudenberg (Markenvorgaben)?
-6. **Nur wenn es passt:** Können SurTec China/Inc. die lokalen Teams direkt beauftragen (Plan B)?
+   - Wer ist dort Ansprechpartner:in?
+2. **Restbetrag 11.000 €** (9.000 + Nebenkostenpauschale) aus der zweiten Kostenstelle mit der letzten Lieferung, oder die Nebenkostenpauschale lieber mit der ersten Teilrechnung?
+3. **Bestellung über 51.000 €** vorab möglich?
+4. **Einkauf:** Bestellnummer, Rechnungsweg (Portal/E-Rechnung), Zahlungsziel nach Freudenberg-Einkaufsbedingungen?
+5. **Freigabe:** Wer gibt die Filme frei? Du, der CEO, FCS-Kommunikation oder Freudenberg mit Markenvorgaben?
+6. **Verpflegung am Set an der Bergstraße** über die Kantine?
 
 ## C – Kickoff nach Freigabe (Konzeption)
 
@@ -48,10 +59,11 @@ Die ersten drei stehen in der Mail, die übrigen klären wir im Telefonat.
 3. Welche Kernbotschaft soll ein:e Kund:in nach dem Imagefilm mitnehmen? Bleibt „The Unseen Art“ die kreative Klammer?
 
 **Die vier Kurzfilme**
+
 4. Welche vier Themen? Bestätigung oder Änderung unseres Vorschlags:
    - CoC Italien
    - Galvanotechnik & Innovation
-   - precote & Traxit animiert
+   - precote & Traxit (animiert)
    - Global China & USA
 5. **Centre of Competence Italien:**
    - Was genau passiert dort (Anodisieren/Aluminium, Kundenversuche, Schulung, Entwicklung)?
@@ -62,12 +74,16 @@ Die ersten drei stehen in der Mail, die übrigen klären wir im Telefonat.
    - Muss Klüber die Marke Traxit freigeben (Wechsel zu SurTec zum 01.01.2027)?
 
 **Menschen und Drehorte**
+
 8. Wer steht vor der Kamera (CEO, F&E, Labor, Technik, Technical Service, Azubi, CoC Italien, China, USA)? Gibt es Ersatzpersonen?
-9. Welche Bereiche dürfen gefilmt werden, welche Kundenteile sind tabu (NDA)? Gibt es Drohnenfreigaben Zwingenberg/Soliera?
+9. Welche Bereiche dürfen gefilmt werden, welche Kundenteile sind tabu (NDA)? Gibt es Drohnenfreigaben für Zwingenberg und Soliera?
 10. Gibt es Bestandsmaterial (Fotos, Videos, Animationen) aus allen Standorten?
 
 **Rahmen**
+
 11. Sprache der Interviews in China (Mandarin mit UT oder Englisch)? Welche Untertitelsprachen braucht ihr wirklich?
-12. Zeitplan: Drehfenster (China nicht um das chinesische Neujahr am 06.02.2027), Reihenfolge der Filme, feste Termine (Messen, Launches)?
-13. Freudenberg-Markenvorgaben: Absender, Typo, Endcard?
-14. Nutzung: Ist bezahlte Werbung geplant (Musiklizenz)?
+12. Zeitplan:
+    - Drehfenster: China ab März wegen Neujahr am 06.02.2027. Italien nicht während Cosmoprof (18.–21.03.), Motor Valley Fest (06.–09.05.), Autopromotec (26.–29.05.).
+    - Reihenfolge der Filme, feste Termine (Messen, Launches)?
+13. Freudenberg-Markenvorgaben: Absender, Typo, Endcard? Gibt es eine KI-Richtlinie für Lieferanten?
+14. Nutzung: Ist bezahlte Werbung geplant? (Musiklizenz)
