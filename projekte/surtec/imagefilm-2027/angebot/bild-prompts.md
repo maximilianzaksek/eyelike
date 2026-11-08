@@ -2,6 +2,18 @@
 
 **Stand:** 08.11.2026 · für die eigene Generierung durch EYELIKE (nicht in dieser Sitzung generiert)
 
+## So geht es mit ChatGPT
+
+1. **Neuen Chat öffnen und zuerst diese Nachricht schicken:**
+```
+Ich brauche fotorealistische Bilder für ein Angebot an SurTec (Oberflächentechnik, Freudenberg-Gruppe). Für alle Bilder gilt: Querformat, hell und sauber, Tageslicht, viel Weiß und Hellgrau mit dezenten tiefblauen und cyanfarbenen Akzenten, echte Metalloberflächen, geringe Schärfentiefe, leichte Filmkörnung, wie mit einer Kinokamera fotografiert. Wichtig: keinerlei Schrift, Buchstaben, Zahlen, Etiketten, Logos oder Schilder im Bild. Kein dunkler Industrie-Look, kein Dampf, kein Rost. Ich schicke dir nacheinander die Motive, erstelle jeweils genau ein Bild.
+```
+2. **Danach die Motive einzeln schicken**, jeweils mit „Bild:“ davor und dem englischen Prompt aus den Abschnitten A–E (F und G nur bei Bedarf).
+3. **Bei Problemen nachsteuern:**
+   - Schrift oder Logo im Bild: „Bitte noch einmal, ohne jede Schrift.“
+   - Bild zu dunkel: „Heller, mehr Tageslicht.“
+4. **Bilder herunterladen und hier im Chat schicken**, mit den Dateinamen aus den Abschnitten. Ich schneide sie auf das Layout zu.
+
 ## Grundregeln (aus SurTec-Recherche und CI)
 
 - **Hell statt düster:** neutral-kühles Tageslicht (ca. 5.500 K), weiche Flächenlichter, viel Weiß und Hellgrau, saubere Edelstahl-Umgebung. Kein Low-Key-Look, kein Industrie-Grunge, kaum Dampf.
