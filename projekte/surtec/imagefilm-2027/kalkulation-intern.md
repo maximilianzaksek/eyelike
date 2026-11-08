@@ -16,8 +16,8 @@ Das Angebot bleibt bei **49.000 € netto inklusive Reise, Übernachtung und Ver
 
 | Position | € |
 |---|---:|
-| Konzeption & Kreation (Schwerpunkt) | 8.500 |
-| Dreh Deutschland & Italien | 12.500 |
+| Konzeption & Kreation (Schwerpunkt) | 11.000 |
+| Dreh Deutschland & Italien | 10.000 |
 | Dreh China & USA | 4.000 |
 | Reise, Logistik & Unterbringung | 3.500 |
 | Postproduktion Imagefilm | 7.000 |
@@ -28,6 +28,8 @@ Das Angebot bleibt bei **49.000 € netto inklusive Reise, Übernachtung und Ver
 - Erste Teilrechnung 28.500 € (Januar 2027, vor dem ersten Drehtag)
 - Zweite Teilrechnung 11.500 € (Lieferung Imagefilm + erster Kurzfilm)
 - Schlussrechnung 9.000 € (spätestens 31.01.2028)
+
+**Hinweis:** Verpflegung am Set an der Bergstraße ist nicht mehr SurTec-Beistellung (sonst Widerspruch zu „all-in“). Zusatzkosten für EYELIKE ca. 200–300 €.
 
 **Marge kommt nur über Erweiterungen:** LinkedIn-Paket 3.900 €, Social-Cutdowns 2.400 €, Hochformat 2.500 €, Sprachen 1.700 € / 3.900 €, weitere Filme.
 
