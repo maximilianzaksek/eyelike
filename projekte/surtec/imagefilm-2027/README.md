@@ -32,6 +32,7 @@
 |---|---|
 | `kalkulation-intern.md` | Selbstkosten, externe Kosten im Detail, Juni-Vergleich, Marktvergleich, Varianten, Zahlungsplan, Risiken (**nur intern**) |
 | `angebot-entwurf.md` | Leistungsbeschreibung und Preise für das kundenfähige Angebot |
+| `angebot/EYELIKE_Angebot_SurTec_5Filme.pdf` | **Gestaltetes Angebot (7 Seiten, versandfertig nach Freigabe)**, Quelle: `angebot/…html` + `angebot/fonts/` |
 | `mail-sabrina-entwurf.md` | Mail-Entwurf + Hinweise fürs Telefonat |
 | `rueckfragen.md` | offene Fragen an Max, an Sabrina jetzt, Kickoff-Fragen |
 | `grundlagen/` | Konzept-/Drehplan-Auswertung (Juni), SurTec-Standorte, Marktpreise, Reisekosten mit Quellen, Risikoregister |

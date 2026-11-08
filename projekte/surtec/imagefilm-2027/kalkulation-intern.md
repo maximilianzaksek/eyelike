@@ -35,7 +35,7 @@
 - **Lieferumfang:**
   - Imagefilm ca. 3:00 + 4 Kurzfilme ≤ 2:00, 16:9, EN, UT EN/DE, 2 Korrekturschleifen je Film
   - **Alles andere on top** (LinkedIn-Clips aus Interviews, Fotos, 9:16, weitere Sprachen, Cutdowns, Sprecher)
-- **Animation precote/Traxit:** intern mit KI (Animator, 4 PT). **Gegenüber dem Kunden nur „Animation“.**
+- **Animation precote/Traxit:** intern mit KI (Animator 4 PT; dazu 4 PT Design-Kit/Imagefilm, zusammen 8 PT). **Gegenüber dem Kunden nur „Animation“.**
 - **Interne Kostensätze:** Max 900 €/PT (höher als die 700 € aus den Angeboten), Projektleitung 450, Editor 550, Grading/Mix 650, Animator 450.
 
 ## 2. Selbstkosten nach Position
@@ -122,7 +122,7 @@ Dafür steigen die **eigenen Personentage von 58,5 auf 60,5**. Gründe:
 | Reise & Logistik (Transport) | 2.900 | 2.600 |
 | KI-Bildwelten/CGI | 2.400 | aufgegangen in Animation (Pos. Kurzfilme) |
 | Postproduktion | 17.500 (1 Film + 3 Cutdowns, UT 9 Sprachen) | 16.700 (Imagefilm 7.000 + 4 Kurzfilme 9.700, UT EN/DE) |
-| Projektsteuerung | – | 5.900 (Partner in 2 Ländern, Lieferung bis 01/2028) |
+| Produktionsleitung & Partnerteams | – | 5.900 (Partner in 2 Ländern, Lieferung bis 01/2028) |
 | **Festpreis** | **49.000** | **49.000** |
 | Übernachtung & Verpflegung | nach Aufwand (Juni-Plan ca. 3.600–4.300) | **Pauschale 2.000** |
 | **Gesamt** | **49.000 + Aufwand** | **51.000 all-in** |

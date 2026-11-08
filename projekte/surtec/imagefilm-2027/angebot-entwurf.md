@@ -64,7 +64,7 @@ Die Themen legt SurTec in der Konzeption fest. Jeder Kurzfilm folgt einem von dr
 | 4 | Reise & Logistik (Transporte aller Drehorte inkl. Inlandsflug USA) | 2.600 |
 | 5 | Postproduktion Imagefilm (Schnitt, Grading, Sounddesign, Musik, Design-Kit, UT EN/DE) | 7.000 |
 | 6 | Postproduktion 4 Kurzfilme inkl. Animation | 9.700 |
-| 7 | Projektsteuerung & Partnermanagement (bis Lieferung Januar 2028) | 5.900 |
+| 7 | Produktionsleitung & Partnerteams (Steuerung und Qualitätssicherung der Partnerteams, gestaffelte Abnahmen bis Januar 2028) | 5.900 |
 | | **Festpreis Produktion** (wie Angebot vom 11.06.2026) | **49.000** |
 | 8 | Übernachtung & Verpflegung aller Drehorte, pauschal zu amtlichen Sätzen (im Juni-Angebot „nach Aufwand“) | 2.000 |
 | | **Gesamtpaket all-in** | **51.000** |
