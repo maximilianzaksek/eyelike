@@ -1,3 +1,5 @@
+> **Überholt (08.11.2026).** Maßgeblich ist das gestaltete Angebot `angebot/EYELIKE_Angebot_SurTec_5Filme.html` / `.pdf`: 49.000 € all-in, Konzeption als Schwerpunkt, Erweiterungen als Pakete. Dieser Text dokumentiert den Zwischenstand.
+
 # Angebot SurTec Imagefilm 2027: ein Imagefilm und vier Kurzfilme
 
 > **Entwurf v2, Stand 08.11.2026.** Grundlage für das kundenfähige Angebot (PDF, max. 2 Seiten).

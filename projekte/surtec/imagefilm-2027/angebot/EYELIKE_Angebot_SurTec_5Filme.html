@@ -17,6 +17,7 @@
   --line:rgba(0,0,0,.1); --line-strong:rgba(0,0,0,.22);
   --surface:#f4f4f5; --surface2:#ececef;
   --red:#e50914; --red-text:#c4070f; --dark:#050506; --red-on-dark:#ff2a33;
+  --ph:radial-gradient(120% 90% at 70% 30%,#2a2a30 0%,#111114 58%,#050506 100%);
 }
 @page{size:A4;margin:0}
 *{box-sizing:border-box;margin:0;padding:0}
@@ -28,8 +29,8 @@ body{font-family:"Montserrat","Helvetica Neue",Arial,sans-serif;color:var(--ink)
 .page:last-child{page-break-after:auto;break-after:auto}
 .page>*{flex-shrink:0}
 @media print{html,body{background:#fff}.page{margin:0}}
-h1,h2,h3,.step .t,.total .l .h{text-wrap:balance}
-p,li,.cond,.opt span,.price .s,.total .l .s,.day .what{text-wrap:pretty}
+h1,h2,h3,.total .l .h{text-wrap:balance}
+p,li,.cond,.price .s,.total .l .s,.day .what,.pkg li{text-wrap:pretty}
 
 /* ---------- Kopf & Fuß ---------- */
 .head{display:flex;justify-content:space-between;align-items:center;padding-bottom:5mm;border-bottom:1px solid var(--line)}
@@ -38,9 +39,9 @@ p,li,.cond,.opt span,.price .s,.total .l .s,.day .what{text-wrap:pretty}
 .wordmark .logo{display:block;height:1.5em;width:auto}
 .head .doc{font-size:7pt;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--faint);text-align:right;line-height:1.5}
 .head .doc b{color:var(--ink);font-weight:800}
-.foot{margin-top:auto;display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--line);
-  padding:4mm 0 8mm;font-size:7pt;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--faint)}
-.foot .pg{color:var(--ink)}
+.foot{margin-top:auto;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;border-top:1px solid var(--line);
+  padding:4mm 0 8mm;font-size:6pt;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--faint)}
+.foot .pg{grid-column:2;font-size:7.5pt;font-weight:700;letter-spacing:0;color:var(--ink)}
 
 /* ---------- Typo ---------- */
 .eyebrow{color:var(--red-text);font-weight:800;text-transform:uppercase;letter-spacing:.16em;font-size:7.4pt;line-height:1.2;display:block}
@@ -50,139 +51,148 @@ h1{font-size:42pt;letter-spacing:-.04em;line-height:.92}
 h2{font-size:23pt;margin-top:2.5mm}
 h3{font-size:10.5pt;font-weight:800;letter-spacing:-.01em;line-height:1.15}
 .outline-svg{display:block;width:174.9mm;height:14.3mm;overflow:visible;margin-top:.6mm}
-.red{color:var(--red-text)}
 .lead{font-size:10.4pt;line-height:21px;color:var(--ink-soft);font-weight:500}
 p{color:var(--dim)}
 .sec{margin-top:6.5mm}
 .sec-head{margin-top:8mm}
 .label{font-size:7pt;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--faint)}
 .small{font-size:7.6pt;color:var(--faint);line-height:15px}
+.price-t{font-weight:600}
+
+/* ---------- Bildflächen ---------- */
+.ph{position:relative;overflow:hidden;border-radius:3px;background-color:#0b0b0d;background-image:var(--img),var(--ph);background-size:cover,cover;background-position:center,center;background-repeat:no-repeat}
+.ph .cap{position:absolute;left:3mm;bottom:2.4mm;font-size:5.8pt;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.82);text-shadow:0 0 6px rgba(0,0,0,.6)}
 
 /* ---------- Cover ---------- */
-.cover-title{margin-top:14mm}
+.cover-title{margin-top:13mm}
 .cover-title h1{margin-top:4mm}
 .cover-title .lead{margin-top:6mm;max-width:150mm}
-.hero{margin-top:10mm;height:96mm;border-radius:3px;position:relative;overflow:hidden;color:#fff;
-  background:radial-gradient(120% 90% at 70% 35%,#1b1b20 0%,#0b0b0d 55%,#050506 100%)}
-.hero .glow{position:absolute;width:120mm;height:120mm;right:-30mm;top:-40mm;border-radius:50%;
-  background:radial-gradient(circle,rgba(229,9,20,.28) 0%,rgba(229,9,20,0) 62%)}
+.hero{margin-top:9mm;height:100mm;color:#fff}
+.hero .shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(5,5,6,.88) 0%,rgba(5,5,6,.62) 55%,rgba(5,5,6,.35) 100%)}
 .vf{position:absolute;inset:7mm}
-.vf i{position:absolute;width:9mm;height:9mm;border-color:rgba(255,255,255,.75);border-style:solid;border-width:0}
+.vf i{position:absolute;width:9mm;height:9mm;border-color:rgba(255,255,255,.8);border-style:solid;border-width:0}
 .vf i:nth-child(1){left:0;top:0;border-left-width:1.4px;border-top-width:1.4px}
 .vf i:nth-child(2){right:0;top:0;border-right-width:1.4px;border-top-width:1.4px}
 .vf i:nth-child(3){left:0;bottom:0;border-left-width:1.4px;border-bottom-width:1.4px}
 .vf i:nth-child(4){right:0;bottom:0;border-right-width:1.4px;border-bottom-width:1.4px}
-.hud{position:absolute;font-size:7pt;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.78)}
+.hud{position:absolute;font-size:7pt;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.82)}
 .hud.tl{left:13mm;top:12mm;display:flex;align-items:center;gap:2mm;color:#fff}
 .hud.tl .rec{width:2.4mm;height:2.4mm;border-radius:50%;background:var(--red);box-shadow:0 0 10px rgba(229,9,20,.8)}
 .hud.tr{right:13mm;top:12mm}
 .hud.bl{left:13mm;bottom:12mm}
 .hud.br{right:13mm;bottom:12mm}
-.stats{position:absolute;left:13mm;right:13mm;top:28mm;display:grid;grid-template-columns:repeat(4,1fr)}
-.stat{padding:0 4mm;border-left:1px solid rgba(255,255,255,.16)}
+.stats{position:absolute;left:13mm;right:13mm;top:30mm;display:grid;grid-template-columns:repeat(4,1fr)}
+.stat{padding:0 4mm;border-left:1px solid rgba(255,255,255,.2)}
 .stat:first-child{border-left:0;padding-left:0}
-.stat:last-child{padding-right:0}
 .stat .n{font-size:46pt;font-weight:900;line-height:.9;letter-spacing:-.04em}
 .stat .n.r{color:var(--red-on-dark)}
 .stat .t{margin-top:2.5mm;font-size:7.4pt;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:#fff}
-.stat .d{margin-top:1.2mm;font-size:7.4pt;color:rgba(255,255,255,.75);line-height:1.4}
-.locs{position:absolute;left:13mm;right:13mm;bottom:20mm;display:flex;gap:3mm;align-items:center;font-size:7pt;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.92)}
-.locs span.sep{flex:1;height:1px;background:rgba(255,255,255,.22)}
-.meta{margin-top:10mm;display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--ink)}
+.stat .d{margin-top:1.2mm;font-size:7.4pt;color:rgba(255,255,255,.8);line-height:1.4}
+.locs{position:absolute;left:13mm;right:13mm;bottom:21mm;display:flex;gap:3mm;align-items:center;font-size:7pt;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:#fff}
+.locs span.sep{flex:1;height:1px;background:rgba(255,255,255,.28)}
+.meta{margin-top:9mm;display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--ink)}
 .meta>div{padding:3mm 3mm 3mm 3.5mm;border-bottom:1px solid var(--line);border-left:1px solid var(--line)}
 .meta>div:nth-child(4n+1){border-left:0;padding-left:0}
 .meta .v{font-size:8.2pt;font-weight:700;color:var(--ink);margin-top:1mm;line-height:1.35}
-.meta .v.big{font-size:10.5pt;font-weight:900;letter-spacing:-.01em}
-.meta .v small{display:block;font-size:7.4pt;font-weight:500;color:var(--dim);margin-top:.5mm;letter-spacing:0}
+.meta .v.big{font-size:10pt;font-weight:600}
+.meta .v small{display:block;font-size:7.4pt;font-weight:500;color:var(--dim);margin-top:.5mm}
 
-/* ---------- Filme ---------- */
-.films{display:grid;grid-template-columns:1.25fr 1fr;gap:3mm;margin-top:5mm}
-.film-main{background:var(--dark);color:#fff;border-radius:3px;padding:5.5mm 6mm;position:relative;overflow:hidden;display:flex;flex-direction:column}
-.film-main .glow{position:absolute;width:90mm;height:90mm;right:-35mm;bottom:-45mm;border-radius:50%;background:radial-gradient(circle,rgba(229,9,20,.32),rgba(229,9,20,0) 62%)}
-.film-main .num{font-size:7.4pt;font-weight:800;color:var(--red-on-dark);letter-spacing:.16em;text-transform:uppercase}
+/* ---------- Paket ---------- */
+.films{display:grid;grid-template-columns:1.05fr 1fr;gap:3mm;margin-top:5mm}
+.film-main{color:#fff;padding:6mm;display:flex;flex-direction:column;min-height:78mm}
+.film-main .shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(5,5,6,.25) 0%,rgba(5,5,6,.55) 45%,rgba(5,5,6,.9) 100%)}
+.film-main>*:not(.shade){position:relative}
+.film-main .kind{font-size:7.4pt;font-weight:800;color:var(--red-on-dark);letter-spacing:.16em;text-transform:uppercase}
 .film-main h3{font-size:20pt;font-weight:900;margin-top:2mm;letter-spacing:-.03em}
-.film-main .dur{color:rgba(255,255,255,.85);margin-top:2.2mm}
-.film-main p{color:rgba(255,255,255,.75);margin-top:auto;padding-top:5mm;position:relative}
-.film-shorts{display:grid;grid-template-columns:1fr 1fr;gap:3mm}
-.short{border:1px solid var(--line);border-radius:3px;padding:3.6mm 4mm;display:flex;flex-direction:column;min-height:22mm}
-.short .num{font-size:7pt;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--faint)}
-.short h3{margin-top:1.2mm;font-size:15pt;font-weight:900}
-.short .dur{margin-top:auto;padding-top:2mm;color:var(--faint);font-size:7pt}
+.film-main .dur{color:rgba(255,255,255,.9);margin-top:2mm}
+.film-main p{color:rgba(255,255,255,.82);margin-top:auto;padding-top:5mm}
 .dur{font-size:7pt;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+.shorts{display:grid;grid-template-columns:1fr 1fr;gap:3mm}
+.short{border:1px solid var(--line);border-radius:3px;overflow:hidden;display:flex;flex-direction:column}
+.short .ph{height:17mm;border-radius:0}
+.short .txt{padding:2.6mm 3mm 3mm;display:flex;flex-direction:column;flex:1}
+.short .top{display:flex;justify-content:space-between;align-items:center}
+.short .kind{font-size:6.6pt;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--faint)}
+.short h3{margin-top:1.4mm;font-size:8.6pt;line-height:1.2}
+.short .dur{margin-top:auto;padding-top:1.6mm;color:var(--faint);font-size:6.6pt}
+.badge{display:inline-flex;align-items:center;justify-content:center;min-width:5.5mm;height:5.5mm;padding:0 1.4mm;border-radius:2px;
+  background:var(--ink);color:#fff;font-weight:900;font-size:7pt;letter-spacing:0}
+.badge.o{background:transparent;color:var(--ink);border:1.3px solid var(--ink)}
 .spec{margin-top:3mm;display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line);border-radius:3px}
 .spec>div{padding:3mm 4mm;border-left:1px solid var(--line)}
 .spec>div:first-child{border-left:0}
 .spec .v{font-size:8.2pt;font-weight:700;color:var(--ink);margin-top:1mm;line-height:1.35}
-.badge{display:inline-flex;align-items:center;justify-content:center;min-width:6mm;height:6mm;padding:0 1.5mm;border-radius:2px;
-  background:var(--ink);color:#fff;font-weight:900;font-size:7.6pt;letter-spacing:0}
-.badge.o{background:transparent;color:var(--ink);border:1.3px solid var(--ink)}
 .types{margin-top:4mm;display:grid;grid-template-columns:repeat(3,1fr);gap:3mm}
 .type{border:1px solid var(--line);border-radius:3px;padding:3.8mm 4.2mm}
 .type .top{display:flex;justify-content:space-between;align-items:center}
 .type .cnt{font-size:7pt;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--faint)}
 .type h3{margin-top:2.4mm}
 .type p{margin-top:1.8mm;font-size:8.2pt;line-height:16px}
-.slots{margin-top:3.5mm;border-top:1px solid var(--ink)}
-.slot{display:grid;grid-template-columns:9mm 1fr auto;align-items:center;gap:3mm;padding:1.7mm 0;border-bottom:1px solid var(--line)}
-.slot .i{font-weight:900;font-size:9.5pt;color:var(--ink)}
-.slot .t{font-weight:700;font-size:9pt;color:var(--ink)}
-.slot .t span{font-weight:500;color:var(--dim)}
-.slot .badge{height:5.5mm;min-width:5.5mm;font-size:7pt}
 
-/* ---------- Drehtage ---------- */
+/* ---------- Konzeption ---------- */
+.concept{margin-top:6mm;display:grid;grid-template-columns:1fr 1fr;gap:5mm}
+.concept .ph{min-height:96mm}
+.steps-list{list-style:none;border-top:1px solid var(--ink)}
+.steps-list li{padding:2.7mm 0;border-bottom:1px solid var(--line)}
+.steps-list b{display:block;font-size:8.8pt;font-weight:800;text-transform:uppercase;letter-spacing:-.005em;color:var(--ink)}
+.steps-list span{display:block;font-size:8.2pt;color:var(--dim);line-height:15px;margin-top:.6mm}
+.approach{margin-top:6mm;background:var(--dark);color:#fff;border-radius:3px;padding:5.5mm 6mm;display:grid;grid-template-columns:52mm 1fr;gap:6mm;align-items:start;position:relative;overflow:hidden}
+.approach .glow{position:absolute;width:90mm;height:90mm;left:-30mm;top:-40mm;border-radius:50%;background:radial-gradient(circle,rgba(229,9,20,.3),rgba(229,9,20,0) 62%)}
+.approach>*:not(.glow){position:relative}
+.approach .label{color:rgba(255,255,255,.7)}
+.approach h3{font-size:13pt;margin-top:2.4mm;color:#fff}
+.checks{list-style:none}
+.checks li{position:relative;padding-left:5mm;margin-top:1.8mm;font-size:8.4pt;color:var(--dim);line-height:16px}
+.checks li:first-child{margin-top:0}
+.checks li::before{content:"";position:absolute;left:0;top:1.35mm;width:1.6mm;height:1.6mm;background:var(--ink);border-radius:50%}
+.checks li b{color:var(--ink);font-weight:700}
+.dark .checks li,.approach .checks li{color:rgba(255,255,255,.78)}
+.dark .checks li b,.approach .checks li b{color:#fff}
+.dark .checks li::before,.approach .checks li::before{background:var(--red-on-dark)}
+
+/* ---------- Produktion ---------- */
 .days{margin-top:6mm;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:2mm}
-.day{border-radius:3px;padding:3.6mm 2.8mm;min-height:56mm;display:flex;flex-direction:column;border:1px solid var(--line)}
+.day{border-radius:3px;padding:3.6mm 2.8mm;min-height:50mm;display:flex;flex-direction:column;border:1px solid var(--line)}
 .day.own{background:var(--surface);border-color:var(--surface)}
 .day.partner{background:#fff;border:1px dashed var(--line-strong)}
-.day .k{font-size:7pt;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--faint)}
-.day .n{font-size:24pt;font-weight:900;letter-spacing:-.04em;line-height:1;margin-top:1mm}
+.day .n{font-size:13pt;font-weight:900;letter-spacing:-.02em;line-height:1;text-transform:uppercase}
 .day .loc{font-size:8pt;font-weight:800;text-transform:uppercase;letter-spacing:-.01em;margin-top:3mm;line-height:1.15}
 .day .cc{font-size:7pt;font-weight:800;letter-spacing:.12em;color:var(--faint);margin-top:1mm;text-transform:uppercase}
-.day .what{font-size:7.6pt;color:var(--dim);margin-top:3mm;line-height:14px;hyphens:manual}
+.day .what{font-size:7.6pt;color:var(--dim);margin-top:2.6mm;line-height:14px;hyphens:manual}
 .day .team{margin-top:auto;padding-top:3mm;font-size:6.8pt;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--ink);line-height:1.35}
 .legend{display:flex;gap:5mm;margin-top:3mm;font-size:7.4pt;color:var(--faint);align-items:center;white-space:nowrap}
 .legend i{display:inline-block;width:3.5mm;height:3.5mm;border-radius:1px;vertical-align:-0.6mm;margin-right:1.6mm}
+.strip{margin-top:5mm;display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:3mm}
+.strip .ph{height:38mm}
 .grid2{display:grid;grid-template-columns:1fr 1fr;gap:4mm}
-.card{border:1px solid var(--line);border-radius:3px;padding:5mm}
-.card.darkc{background:var(--dark);color:#fff;border-color:transparent}
-.darkc .label{color:rgba(255,255,255,.7)}
-.checks{list-style:none;margin-top:3mm}
-.checks li{position:relative;padding-left:5mm;margin-top:1.8mm;font-size:8.4pt;color:var(--dim);line-height:16px}
-.checks li::before{content:"";position:absolute;left:0;top:1.9mm;width:1.6mm;height:1.6mm;background:var(--ink);border-radius:50%}
-.checks li b{color:var(--ink);font-weight:700}
-.darkc .checks li{color:rgba(255,255,255,.75)}
-.darkc .checks li b{color:#fff}
-.darkc .checks li::before{background:var(--red-on-dark)}
+.card{border:1px solid var(--line);border-radius:3px;padding:4.6mm 5mm}
+.card h3{margin-top:2.4mm;margin-bottom:2.6mm}
 .note{margin-top:5mm;border-left:3px solid var(--red);padding:3.5mm 5mm;background:var(--surface);border-radius:0 3px 3px 0}
 .note h3{font-size:9pt}
 .note p{margin-top:1.4mm;font-size:8.4pt;line-height:17px}
 
-/* ---------- Preise ---------- */
+/* ---------- Investition ---------- */
 table{width:100%;border-collapse:collapse}
 .price th{font-size:7pt;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--faint);text-align:left;padding:0 0 2.4mm;border-bottom:1px solid var(--ink)}
 .price th.r,.price td.r{text-align:right;white-space:nowrap;padding-right:3mm}
-.price td{padding:1.9mm 0;border-bottom:1px solid var(--line);vertical-align:baseline}
-.price td.pos{width:10mm;font-weight:900;color:var(--ink);font-size:9pt}
+.price td{padding:2.4mm 0;border-bottom:1px solid var(--line);vertical-align:baseline}
 .price td .t{font-weight:700;color:var(--ink);font-size:9pt}
-.price td .s{font-size:7.6pt;color:var(--dim);margin-top:.6mm;line-height:14px}
-.price td.r{font-weight:800;font-size:9.4pt;color:var(--ink);padding-left:4mm}
-.price tr.sub td{border-bottom:1px solid var(--ink);background:var(--surface);padding-top:2.4mm;padding-bottom:2.4mm}
-.price tr.sub td.t2{font-weight:900;text-transform:uppercase;letter-spacing:-.01em;font-size:9.4pt}
-.price tr.sub td.t2 span{font-weight:600;text-transform:none;color:var(--dim);font-size:7.8pt;letter-spacing:0}
-.price tr.sub td.r{font-size:11pt;font-weight:900}
-.total{margin-top:4mm;background:var(--dark);color:#fff;border-radius:3px;padding:5.5mm 7mm;display:flex;justify-content:space-between;align-items:center;gap:6mm;position:relative;overflow:hidden}
-.total .glow{position:absolute;width:70mm;height:70mm;left:-20mm;top:-30mm;border-radius:50%;background:radial-gradient(circle,rgba(229,9,20,.35),rgba(229,9,20,0) 62%)}
+.price td .s{font-size:7.6pt;color:var(--dim);margin-top:.6mm;line-height:14px;max-width:135mm}
+.price td.r{font-weight:600;font-size:9.2pt;color:var(--ink);padding-left:4mm}
+.price tr.key td .t{font-size:9.6pt}
+.price tr.key td .t::after{content:"Schwerpunkt";margin-left:2.5mm;font-size:6.2pt;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--red-text);vertical-align:1px}
+.total{margin-top:5mm;background:var(--dark);color:#fff;border-radius:3px;padding:5mm 7mm;display:flex;justify-content:space-between;align-items:center;gap:6mm;position:relative;overflow:hidden}
+.total .glow{position:absolute;width:70mm;height:70mm;left:-20mm;top:-30mm;border-radius:50%;background:radial-gradient(circle,rgba(229,9,20,.32),rgba(229,9,20,0) 62%)}
 .total .l{position:relative;flex:1}
-.total .l .k{font-size:7pt;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.7)}
-.total .l .h{font-size:12.5pt;font-weight:900;text-transform:uppercase;letter-spacing:-.02em;margin-top:1.2mm}
-.total .l .s{font-size:7.6pt;color:rgba(255,255,255,.75);margin-top:1.4mm;line-height:14px}
-.total .amt{position:relative;white-space:nowrap;font-size:34pt;font-weight:900;letter-spacing:-.04em;line-height:1}
-.total .amt small{font-size:14pt;font-weight:800;margin-left:1.5mm}
+.total .l .k{font-size:7pt;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.72)}
+.total .l .h{font-size:11.5pt;font-weight:900;text-transform:uppercase;letter-spacing:-.02em;margin-top:1.2mm}
+.total .l .s{font-size:7.6pt;color:rgba(255,255,255,.78);margin-top:1.4mm;line-height:14px}
+.total .amt{position:relative;white-space:nowrap;font-size:22pt;font-weight:600;letter-spacing:-.02em;line-height:1}
+.total .amt small{font-size:11pt;font-weight:500;margin-left:1.2mm;color:rgba(255,255,255,.8)}
 .bars{margin-top:5mm}
 .bar{margin-top:3.2mm}
-.bar .row{display:flex;justify-content:space-between;font-size:8pt;font-weight:700;color:var(--ink)}
-.bar .row span:last-child{font-weight:900}
-.bar .track{margin-top:1.6mm;height:4mm;background:var(--surface2);border-radius:2px;overflow:hidden}
+.bar .row{display:flex;justify-content:space-between;font-size:8pt;font-weight:600;color:var(--ink)}
+.bar .track{margin-top:1.6mm;height:3.4mm;background:var(--surface2);border-radius:2px;overflow:hidden}
 .bar .fillb{height:100%;background:var(--line-strong)}
 .bar .fillb.red{background:var(--red)}
 
@@ -190,52 +200,65 @@ table{width:100%;border-collapse:collapse}
 .cmp th{font-size:7pt;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--faint);text-align:left;padding:0 3mm 2.4mm 0;border-bottom:1px solid var(--ink);vertical-align:bottom;line-height:1.5}
 .cmp th:first-child,.cmp td:first-child{padding-left:3mm}
 .cmp th.new{color:var(--red-text)}
-.cmp td{padding:1.9mm 3mm 1.9mm 0;border-bottom:1px solid var(--line);vertical-align:baseline;font-size:8pt;color:var(--dim);line-height:14px}
+.cmp td{padding:2mm 3mm 2mm 0;border-bottom:1px solid var(--line);vertical-align:baseline;font-size:8pt;color:var(--dim);line-height:14px}
 .cmp td:first-child{font-weight:700;color:var(--ink);width:44mm}
-.cmp td b{color:var(--ink);font-weight:800;display:block;font-size:8.8pt;line-height:15px}
+.cmp td b{color:var(--ink);font-weight:600;display:block;font-size:8.8pt;line-height:15px}
 .cmp tr.fp td{background:var(--surface);border-bottom:1px solid var(--ink)}
 .cmp tr.fp td:first-child,.cmp tr.tot td:first-child{text-transform:uppercase;font-weight:900}
 .cmp tr.tot td{border-bottom:0;padding-top:3mm}
-.cmp tr.tot td.new b{color:var(--red-text);font-size:11pt}
+.cmp tr.tot td.new b{color:var(--red-text);font-size:10pt;font-weight:700}
 .pay{margin-top:5mm;display:grid;grid-template-columns:repeat(3,1fr);gap:3mm}
 .payc{border:1px solid var(--line);border-radius:3px;padding:4mm;display:flex;flex-direction:column}
-.payc .amt{font-size:17pt;font-weight:900;letter-spacing:-.03em;margin-top:2.2mm;line-height:1}
+.payc .amt{font-size:14pt;font-weight:600;letter-spacing:-.02em;margin-top:2.2mm;line-height:1}
 .payc p{font-size:7.8pt;margin-top:2mm;line-height:15px}
 .payc .when{margin-top:auto;padding-top:3mm;font-size:7pt;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--ink);line-height:1.4}
 
-/* ---------- Optionen ---------- */
-.opts{margin-top:4mm;display:grid;grid-template-columns:1fr 1fr;gap:6mm 8mm}
-.optg h3{font-size:8.6pt;letter-spacing:.06em;color:var(--ink);padding-bottom:2.2mm;border-bottom:1px solid var(--ink)}
-.opt{display:flex;justify-content:space-between;align-items:center;gap:4mm;min-height:10mm;padding:1.6mm 0;border-bottom:1px solid var(--line);font-size:8.6pt;line-height:15px}
+/* ---------- Erweiterungen ---------- */
+.pkgs{margin-top:6mm;display:grid;grid-template-columns:repeat(3,1fr);gap:3mm}
+.pkg{border:1px solid var(--line);border-radius:3px;padding:4.6mm 4.6mm 4mm;display:flex;flex-direction:column}
+.pkg.wide{grid-column:span 3;display:grid;grid-template-columns:52mm 1fr;gap:6mm}
+.pkg .label{display:block}
+.pkg h3{margin-top:2.2mm;font-size:10pt}
+.pkg ul{list-style:none;margin-top:3mm;margin-bottom:3.5mm}
+.pkg li{position:relative;padding-left:4mm;font-size:8pt;color:var(--dim);line-height:15px;margin-top:1.2mm}
+.pkg li::before{content:"";position:absolute;left:0;top:1.3mm;width:1.4mm;height:1.4mm;border-radius:50%;background:var(--ink)}
+.pkg .p{margin-top:auto;padding-top:4mm;display:flex;justify-content:space-between;align-items:baseline;border-top:1px solid var(--line);margin-top:auto}
+.pkg .p span{font-size:7pt;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--faint)}
+.pkg .p b{font-size:11pt;font-weight:600;color:var(--ink)}
+.pkg-rows{display:grid;grid-template-columns:1fr 1fr 1fr;gap:3mm}
+.pkg-rows>div{border-left:1px solid var(--line);padding-left:4mm}
+.pkg-rows>div:first-child{border-left:0;padding-left:0}
+.pkg-rows .t{font-size:8.2pt;color:var(--ink-soft);line-height:15px;min-height:30px}
+.pkg-rows b{display:block;margin-top:2mm;font-size:10.5pt;font-weight:600}
+.singles{margin-top:6mm}
+.singles h3{font-size:8.6pt;letter-spacing:.06em;padding-bottom:2.2mm;border-bottom:1px solid var(--ink)}
+.single-grid{display:grid;grid-template-columns:1fr 1fr;column-gap:8mm}
+.opt{display:flex;justify-content:space-between;align-items:center;gap:4mm;min-height:9mm;padding:1.4mm 0;border-bottom:1px solid var(--line);font-size:8.3pt;line-height:15px}
 .opt span:first-child{color:var(--ink-soft);font-weight:500}
-.opt span:last-child{font-weight:800;color:var(--ink);white-space:nowrap}
+.opt span:last-child{font-weight:600;color:var(--ink);white-space:nowrap}
 
 /* ---------- Konditionen & Abschluss ---------- */
 .conds{margin-top:4mm;columns:2;column-gap:7mm}
 .cond{break-inside:avoid;padding:2.1mm 0;border-bottom:1px solid var(--line);font-size:7.8pt;color:var(--dim);line-height:14px}
 .cond b{color:var(--ink);font-weight:800;display:block;font-size:7.4pt;letter-spacing:.08em;text-transform:uppercase;margin-bottom:.6mm}
-.closing{margin-top:6mm;background:var(--dark);color:#fff;border-radius:3px;padding:6.5mm 7mm;position:relative;overflow:hidden}
-.closing .glow{position:absolute;width:110mm;height:110mm;right:-40mm;top:-50mm;border-radius:50%;background:radial-gradient(circle,rgba(229,9,20,.3),rgba(229,9,20,0) 62%)}
-.closing .eyebrow{color:var(--red-on-dark);position:relative}
-.closing h2{color:#fff;font-size:19pt;position:relative}
-.closing .lead{color:rgba(255,255,255,.78);margin-top:3mm;font-size:9pt;line-height:18px;max-width:150mm;position:relative}
-.steps{position:relative;margin-top:5mm;display:grid;grid-template-columns:repeat(5,1fr);gap:2.5mm}
-.step{border-top:2px solid rgba(255,255,255,.25);padding-top:2.6mm;display:flex;flex-direction:column}
-.step:first-child{border-top-color:var(--red-on-dark)}
-.step .n{font-size:7pt;font-weight:800;letter-spacing:.14em;color:var(--red-on-dark)}
-.step .t{font-size:8pt;font-weight:800;text-transform:uppercase;letter-spacing:-.01em;margin-top:1.2mm;line-height:1.2}
-.step .w{font-size:7.6pt;color:rgba(255,255,255,.75);margin-top:auto;padding-top:1.2mm}
-.sign{position:relative;margin-top:6mm;padding-top:4.5mm;border-top:1px solid rgba(255,255,255,.16);display:flex;justify-content:space-between;align-items:flex-end}
+.closing{margin-top:6mm;color:#fff;padding:7mm;min-height:62mm;display:flex;flex-direction:column}
+.closing .shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(5,5,6,.92) 0%,rgba(5,5,6,.72) 60%,rgba(5,5,6,.45) 100%)}
+.closing>*:not(.shade){position:relative}
+.closing .eyebrow{color:var(--red-on-dark)}
+.closing h2{color:#fff;font-size:19pt}
+.closing .lead{color:rgba(255,255,255,.82);margin-top:3mm;font-size:9pt;line-height:18px;max-width:140mm}
+.sign{margin-top:auto;padding-top:5mm;display:flex;justify-content:space-between;align-items:flex-end}
+.sign-in{border-top:1px solid rgba(255,255,255,.2);padding-top:4.5mm;width:100%;display:flex;justify-content:space-between;align-items:flex-end}
 .sign .name{font-size:10.5pt;font-weight:900;text-transform:uppercase;letter-spacing:-.01em}
-.sign .role{font-size:7pt;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.7);margin-top:1mm}
-.sign .contact{margin-top:2mm;font-size:7.8pt;color:rgba(255,255,255,.8)}
+.sign .role{font-size:7pt;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.72);margin-top:1mm}
+.sign .contact{margin-top:2mm;font-size:7.8pt;color:rgba(255,255,255,.85)}
 .sign .wordmark{font-size:13pt}
 .sign .wordmark .like{color:#fff}
 </style>
 </head>
 <body>
 
-<!-- =============== SEITE 1 · COVER =============== -->
+<!-- =============== COVER =============== -->
 <section class="page">
   <header class="head">
     <div>
@@ -251,8 +274,8 @@ table{width:100%;border-collapse:collapse}
     <p class="lead">Sechs Drehtage in Deutschland, Italien, China und den USA – daraus entstehen ein übergreifender Imagefilm und vier eigenständige Kurzfilme. Ein Look, eine Musikwelt, ein Design-Kit: SurTec als Gesamtgeschichte und in Kapiteln.</p>
   </div>
 
-  <div class="hero">
-    <div class="glow"></div>
+  <div class="ph hero" style="--img:url('assets/03_crystal_dive.jpg')">
+    <div class="shade"></div>
     <div class="vf"><i></i><i></i><i></i><i></i></div>
     <div class="hud tl"><span class="rec"></span>REC</div>
     <div class="hud tr">UHD · 16:9 · EN · UT EN/DE</div>
@@ -263,25 +286,25 @@ table{width:100%;border-collapse:collapse}
       <div class="stat"><div class="n">1</div><div class="t">Look</div><div class="d">eine Bildsprache<br>für alle Filme</div></div>
     </div>
     <div class="locs"><span>Bergstraße</span><span class="sep"></span><span>Soliera</span><span class="sep"></span><span>Hangzhou</span><span class="sep"></span><span>Brunswick</span></div>
-    <div class="hud bl">SurTec · Imagefilm 2027</div>
+    <div class="hud bl">Visualisierung · EYELIKE</div>
     <div class="hud br">Lieferung bis 01/2028</div>
   </div>
 
   <div class="meta">
     <div><span class="label">Kunde</span><div class="v">SurTec International GmbH<small>z. Hd. Sabrina Richters</small></div></div>
     <div><span class="label">Projekt</span><div class="v">Imagefilm 2027<small>Imagefilm + 4 Kurzfilme</small></div></div>
-    <div><span class="label">Gesamtpaket</span><div class="v big">51.000&nbsp;€<small>netto, all-in</small></div></div>
-    <div><span class="label">Zahlung</span><div class="v">40.000&nbsp;€ in 2027<small>11.000&nbsp;€ bis 01/2028</small></div></div>
+    <div><span class="label">Gesamtpaket</span><div class="v big">49.000&nbsp;€<small>netto, all-in</small></div></div>
+    <div><span class="label">Zahlung</span><div class="v">40.000&nbsp;€ in 2027<small>9.000&nbsp;€ bis 01/2028</small></div></div>
     <div><span class="label">Grundlage</span><div class="v">Angebot Juni 2026<small>Abstimmung vom 05.11.2026</small></div></div>
     <div><span class="label">Zeitraum</span><div class="v">Drehs bis 06/2027<small>Lieferung bis 01/2028</small></div></div>
     <div><span class="label">Datum</span><div class="v">09.11.2026</div></div>
     <div><span class="label">Gültig bis</span><div class="v">15.12.2026</div></div>
   </div>
 
-  <footer class="foot"><span>EYELIKE · Angebot Imagefilm SurTec 2027</span><span class="pg">Seite 01</span></footer>
+  <footer class="foot"><span>EYELIKE · Angebot Imagefilm SurTec 2027</span><span class="pg">1</span></footer>
 </section>
 
-<!-- =============== SEITE 2 · DAS PAKET =============== -->
+<!-- =============== DAS PAKET =============== -->
 <section class="page">
   <header class="head">
     <div class="wordmark"><img class="logo" src="assets/eyelike-auge.png" alt=""><span><span class="eye">EYE</span>LIKE</span></div>
@@ -289,24 +312,24 @@ table{width:100%;border-collapse:collapse}
   </header>
 
   <div class="sec-head">
-    <span class="eyebrow">01 · Das Paket</span>
+    <span class="eyebrow">Das Paket</span>
     <h2>Fünf Filme aus einer Produktion</h2>
     <p class="lead" style="margin-top:3.5mm;max-width:165mm">Alle fünf Filme entstehen aus dem Material derselben sechs Drehtage. Das macht das Paket effizient – und sorgt dafür, dass alle Filme zueinander passen.</p>
   </div>
 
   <div class="films">
-    <div class="film-main">
-      <div class="glow"></div>
-      <div class="num">Hauptfilm</div>
+    <div class="ph film-main" style="--img:url('assets/13_drone_campus.jpg')">
+      <div class="shade"></div>
+      <div class="kind">Hauptfilm</div>
       <h3>Imagefilm</h3>
       <div class="dur">ca. 3:00 min · max. 3:30 min</div>
       <p>Die übergreifende Geschichte: Standorte, Anwendungsfelder und die Menschen von SurTec – verbunden zu einer Erzählung über vier Länder.</p>
     </div>
-    <div class="film-shorts">
-      <div class="short"><div class="num">Kurzfilm</div><h3>01</h3><div class="dur">max. 2:00 min</div></div>
-      <div class="short"><div class="num">Kurzfilm</div><h3>02</h3><div class="dur">max. 2:00 min</div></div>
-      <div class="short"><div class="num">Kurzfilm</div><h3>03</h3><div class="dur">max. 2:00 min</div></div>
-      <div class="short"><div class="num">Kurzfilm</div><h3>04</h3><div class="dur">max. 2:00 min</div></div>
+    <div class="shorts">
+      <div class="short"><div class="ph" style="--img:url('assets/06_anodisierung.jpg')"></div><div class="txt"><div class="top"><span class="kind">Kurzfilm</span><span class="badge">A</span></div><h3>Centre of Competence Italien</h3><div class="dur">max. 2:00 min</div></div></div>
+      <div class="short"><div class="ph" style="--img:url('assets/11_galvanikbad.jpg')"></div><div class="txt"><div class="top"><span class="kind">Kurzfilm</span><span class="badge">A</span></div><h3>Galvanotechnik &amp; Innovation</h3><div class="dur">max. 2:00 min</div></div></div>
+      <div class="short"><div class="ph" style="--img:url('assets/07_precote.jpg')"></div><div class="txt"><div class="top"><span class="kind">Kurzfilm</span><span class="badge">B</span></div><h3>Neue Felder: precote® &amp; Traxit</h3><div class="dur">max. 2:00 min</div></div></div>
+      <div class="short"><div class="ph" style="--img:url('assets/10_interview.jpg')"></div><div class="txt"><div class="top"><span class="kind">Kurzfilm</span><span class="badge o">C</span></div><h3>SurTec global: China &amp; USA</h3><div class="dur">max. 2:00 min</div></div></div>
     </div>
   </div>
 
@@ -320,7 +343,7 @@ table{width:100%;border-collapse:collapse}
   <div class="sec">
     <span class="eyebrow">Die vier Kurzfilme</span>
     <h2 style="font-size:16pt">Themen offen. Format fest.</h2>
-    <p style="margin-top:2.5mm;max-width:165mm">Die Themen legen Sie in der Konzeption fest. Damit Inhalt und Aufwand planbar bleiben, folgt jeder Kurzfilm einem von drei Filmtypen:</p>
+    <p style="margin-top:2.5mm;max-width:168mm">Die Themen oben sind unser Vorschlag – festgelegt werden sie gemeinsam in der Konzeption. Damit Inhalt und Aufwand planbar bleiben, folgt jeder Kurzfilm einem von drei Filmtypen:</p>
     <div class="types">
       <div class="type">
         <div class="top"><span class="badge">A</span><span class="cnt">2× im Paket</span></div>
@@ -340,20 +363,10 @@ table{width:100%;border-collapse:collapse}
     </div>
   </div>
 
-  <div class="sec" style="margin-top:5.5mm">
-    <span class="label">Unser Vorschlag zur Belegung · finale Festlegung in der Konzeption</span>
-    <div class="slots">
-      <div class="slot"><span class="i">01</span><span class="t">Centre of Competence Italien <span>– Anodisieren &amp; Aluminium</span></span><span class="badge">A</span></div>
-      <div class="slot"><span class="i">02</span><span class="t">Galvanotechnik &amp; Innovation <span>– an der Bergstraße</span></span><span class="badge">A</span></div>
-      <div class="slot"><span class="i">03</span><span class="t">Neue Felder: precote® &amp; Traxit <span>– Wirkprinzipien animiert</span></span><span class="badge">B</span></div>
-      <div class="slot"><span class="i">04</span><span class="t">SurTec global <span>– China &amp; USA</span></span><span class="badge o">C</span></div>
-    </div>
-  </div>
-
-  <footer class="foot"><span>EYELIKE · Angebot Imagefilm SurTec 2027</span><span class="pg">Seite 02</span></footer>
+  <footer class="foot"><span>EYELIKE · Angebot Imagefilm SurTec 2027</span><span class="pg">2</span></footer>
 </section>
 
-<!-- =============== SEITE 3 · DREHTAGE =============== -->
+<!-- =============== KONZEPTION =============== -->
 <section class="page">
   <header class="head">
     <div class="wordmark"><img class="logo" src="assets/eyelike-auge.png" alt=""><span><span class="eye">EYE</span>LIKE</span></div>
@@ -361,18 +374,56 @@ table{width:100%;border-collapse:collapse}
   </header>
 
   <div class="sec-head">
-    <span class="eyebrow">02 · Die Drehtage</span>
+    <span class="eyebrow">Konzeption</span>
+    <h2>Erst die Geschichte.<br>Dann die Kamera.</h2>
+    <p class="lead" style="margin-top:3.5mm;max-width:168mm">Fünf Filme brauchen eine tragende Idee, eine Dramaturgie, die über alle Filme trägt, und eine Planung, die jeden Drehtag mehrfach nutzt. Deshalb steckt der größte Teil unserer Arbeit in der Zeit vor dem ersten Drehtag – in enger Abstimmung mit Ihnen.</p>
+  </div>
+
+  <div class="concept">
+    <div class="ph" style="--img:url('assets/01_hero_macro.jpg')"><span class="cap">Visualisierung · EYELIKE</span></div>
+    <ul class="steps-list">
+      <li><b>Ideenfindung &amp; Leitidee</b><span>Die eine Geschichte, die alle fünf Filme verbindet – entwickelt aus Ihren Themen und Kernbotschaften.</span></li>
+      <li><b>Storyline &amp; Dramaturgie</b><span>Aufbau und Spannungsbogen für den Imagefilm und jeden der vier Kurzfilme.</span></li>
+      <li><b>Interviewkonzept</b><span>Protagonist:innen, Fragen und Botschaften – abgestimmt auf alle fünf Filme.</span></li>
+      <li><b>Drehplanung</b><span>Drehplan, Motive und Shotlists, damit jeder Drehtag Material für mehrere Filme liefert.</span></li>
+      <li><b>Briefing der Partnerteams</b><span>Look, Technik und Shotlist für die Drehtage in China und den USA.</span></li>
+      <li><b>Abstimmung mit SurTec</b><span>Kickoff-Workshop, Freigabe von Konzept und Drehplan, ein fester Ansprechpartner.</span></li>
+    </ul>
+  </div>
+
+  <div class="approach">
+    <div class="glow"></div>
+    <div><span class="label">Unser Ansatz</span><h3>Budget für Filme statt für Reisen</h3></div>
+    <ul class="checks">
+      <li><b>Animation statt Drehreisen:</b> precote® und Traxit zeigen wir mit realen Musterteilen und erklärender Animation – die Reisen nach München und Schwelm entfallen.</li>
+      <li><b>Partnerteams vor Ort</b> statt Langstreckenflügen nach China und in die USA.</li>
+      <li><b>Ein Look für alle fünf Filme:</b> Cinema-Kameras und eigenes Licht an unseren Drehtagen, einheitliche Vorgaben für die Partnerteams, gemeinsames Design-Kit.</li>
+    </ul>
+  </div>
+
+  <footer class="foot"><span>EYELIKE · Angebot Imagefilm SurTec 2027</span><span class="pg">3</span></footer>
+</section>
+
+<!-- =============== PRODUKTION =============== -->
+<section class="page">
+  <header class="head">
+    <div class="wordmark"><img class="logo" src="assets/eyelike-auge.png" alt=""><span><span class="eye">EYE</span>LIKE</span></div>
+    <div class="doc"><b>Angebot · Imagefilm</b><br>SurTec International</div>
+  </header>
+
+  <div class="sec-head">
+    <span class="eyebrow">Produktion</span>
     <h2>Sechs Drehtage. Vier Länder.</h2>
     <p class="lead" style="margin-top:3.5mm;max-width:165mm">Vier Tage dreht unser Team in Deutschland und Italien, je einen Tag unsere Partnerteams in China und den USA – nach unserer Shotlist und unter unserer Regie.</p>
   </div>
 
   <div class="days">
-    <div class="day own"><span class="k">Tag</span><span class="n">01</span><span class="loc">Bergstraße</span><span class="cc">DE</span><span class="what">Produktion, Galvano&shy;technikum, Labor, Drohne</span><span class="team">EYELIKE&#8209;Team</span></div>
-    <div class="day own"><span class="k">Tag</span><span class="n">02</span><span class="loc">Bergstraße</span><span class="cc">DE</span><span class="what">Interviews und Kultur&shy;momente</span><span class="team">EYELIKE&#8209;Team</span></div>
-    <div class="day own"><span class="k">Tag</span><span class="n">03</span><span class="loc">Bergstraße</span><span class="cc">DE</span><span class="what">Tabletop &amp; Makro: Muster&shy;teile aller Felder inkl. precote® und Traxit</span><span class="team">EYELIKE&#8209;Team</span></div>
-    <div class="day own"><span class="k">Tag</span><span class="n">04</span><span class="loc">Soliera</span><span class="cc">IT</span><span class="what">Centre of Competence: Anodisieren, Farben, Labor</span><span class="team">EYELIKE&#8209;Team</span></div>
-    <div class="day partner"><span class="k">Tag</span><span class="n">05</span><span class="loc">Hangzhou</span><span class="cc">CN</span><span class="what">Werk, Technikum, 1&nbsp;Interview</span><span class="team">Partnerteam<br>EYELIKE&#8209;Regie live</span></div>
-    <div class="day partner"><span class="k">Tag</span><span class="n">06</span><span class="loc">Brunswick</span><span class="cc">US · Ohio</span><span class="what">Werk, Technikum, 1&nbsp;Interview</span><span class="team">Partnerteam<br>EYELIKE&#8209;Regie live</span></div>
+    <div class="day own"><span class="n">Tag 1</span><span class="loc">Bergstraße</span><span class="cc">DE</span><span class="what">Produktion, Galvano&shy;technikum, Labor, Drohne</span><span class="team">EYELIKE&#8209;Team</span></div>
+    <div class="day own"><span class="n">Tag 2</span><span class="loc">Bergstraße</span><span class="cc">DE</span><span class="what">Interviews und Kultur&shy;momente</span><span class="team">EYELIKE&#8209;Team</span></div>
+    <div class="day own"><span class="n">Tag 3</span><span class="loc">Bergstraße</span><span class="cc">DE</span><span class="what">Tabletop &amp; Makro: Muster&shy;teile aller Felder inkl. precote® und Traxit</span><span class="team">EYELIKE&#8209;Team</span></div>
+    <div class="day own"><span class="n">Tag 4</span><span class="loc">Soliera</span><span class="cc">IT</span><span class="what">Centre of Competence: Anodisieren, Farben, Labor</span><span class="team">EYELIKE&#8209;Team</span></div>
+    <div class="day partner"><span class="n">Tag 5</span><span class="loc">Hangzhou</span><span class="cc">CN</span><span class="what">Werk, Technikum, 1&nbsp;Interview</span><span class="team">Partnerteam<br>EYELIKE&#8209;Regie live</span></div>
+    <div class="day partner"><span class="n">Tag 6</span><span class="loc">Brunswick</span><span class="cc">US · Ohio</span><span class="what">Werk, Technikum, 1&nbsp;Interview</span><span class="team">Partnerteam<br>EYELIKE&#8209;Regie live</span></div>
   </div>
   <div class="legend">
     <span><i style="background:var(--surface);border:1px solid var(--line)"></i>EYELIKE-Team vor Ort</span>
@@ -380,38 +431,41 @@ table{width:100%;border-collapse:collapse}
     <span style="margin-left:auto">Drehtag bis 10&nbsp;h · Standorte und Inhalte final im Drehplan</span>
   </div>
 
-  <div class="grid2 sec">
+  <div class="strip">
+    <div class="ph" style="--img:url('assets/12_bts.jpg')"><span class="cap">Visualisierung · EYELIKE</span></div>
+    <div class="ph" style="--img:url('assets/14_labor.jpg')"></div>
+    <div class="ph" style="--img:url('assets/04_teilereinigung.jpg')"></div>
+  </div>
+
+  <div class="grid2 sec" style="margin-top:5mm">
     <div class="card">
       <span class="label">So arbeiten unsere Partnerteams</span>
-      <h3 style="margin-top:2.5mm">Einheitliche Vorgaben an allen Standorten</h3>
+      <h3>Einheitliche Vorgaben an allen Standorten</h3>
       <ul class="checks">
         <li><b>Zwei-Personen-Team vor Ort</b> (Kamera, Assistenz/Ton) mit eigener Technik</li>
         <li><b>EYELIKE-Shotlist und Technik-Vorgaben</b> für einheitliche Bildqualität und Look</li>
         <li><b>Live-Regie per Remote-Verbindung</b> während Interview und Dreh</li>
         <li><b>Doppelte Datensicherung,</b> Übergabe innerhalb von 10&nbsp;Werktagen</li>
-        <li>Umfang je Partner-Drehtag: ein Standort, ein Interview, ohne Drohnenaufnahmen</li>
+        <li>Je Partner-Drehtag ein Standort, ein Interview, ohne Drohnenaufnahmen</li>
       </ul>
     </div>
-    <div class="card darkc">
-      <span class="label">Unser Ansatz</span>
-      <h3 style="margin-top:2.5mm">Budget für Filme statt für Reisen</h3>
+    <div class="card">
+      <span class="label">Was SurTec beisteuert</span>
+      <h3>Zugang, Menschen, Freigaben</h3>
       <ul class="checks">
-        <li><b>Animation statt Drehreisen:</b> precote® und Traxit zeigen wir mit realen Musterteilen und erklärender Animation – die Reisen nach München und Schwelm entfallen.</li>
-        <li><b>Partnerteams vor Ort</b> statt Langstreckenflügen nach China und in die USA.</li>
-        <li><b>Ein Look für alle fünf Filme:</b> Cinema-Kameras und eigenes Licht an unseren Drehtagen, einheitliche Vorgaben für die Partnerteams, gemeinsames Design-Kit.</li>
+        <li><b>Briefing</b> zu Themen und Kernbotschaften</li>
+        <li><b>Zugang und Drehgenehmigungen</b> je Standort, Ansprechpartner:innen vor Ort</li>
+        <li><b>Protagonist:innen</b> mit Terminen und Einverständniserklärungen (Vorlage von EYELIKE)</li>
+        <li><b>Freigaben</b> für Drohne und Marken inkl. Traxit, Musterteile für das Tabletop</li>
+        <li>Verpflegung am Set an der Bergstraße, Unterstützung beim Datentransfer aus China</li>
       </ul>
     </div>
   </div>
 
-  <div class="note" style="margin-top:6mm">
-    <h3>Was SurTec beisteuert</h3>
-    <p>Themen und Kernbotschaften für die Konzeption, Zugang und Drehgenehmigungen je Standort, Ansprechpartner:innen vor Ort, Termine der Protagonist:innen, Einverständniserklärungen (Vorlage von EYELIKE, im Ausland in Landessprache), Drohnen- und Markenfreigaben inkl. Traxit, Musterteile für das Tabletop, Verpflegung am Set an der Bergstraße sowie Unterstützung der lokalen IT beim Datentransfer aus China.</p>
-  </div>
-
-  <footer class="foot"><span>EYELIKE · Angebot Imagefilm SurTec 2027</span><span class="pg">Seite 03</span></footer>
+  <footer class="foot"><span>EYELIKE · Angebot Imagefilm SurTec 2027</span><span class="pg">4</span></footer>
 </section>
 
-<!-- =============== SEITE 4 · INVESTITION =============== -->
+<!-- =============== INVESTITION =============== -->
 <section class="page">
   <header class="head">
     <div class="wordmark"><img class="logo" src="assets/eyelike-auge.png" alt=""><span><span class="eye">EYE</span>LIKE</span></div>
@@ -419,22 +473,20 @@ table{width:100%;border-collapse:collapse}
   </header>
 
   <div class="sec-head">
-    <span class="eyebrow">03 · Investition</span>
+    <span class="eyebrow">Investition</span>
     <h2>Transparent kalkuliert</h2>
   </div>
 
   <table class="price" style="margin-top:6mm">
-    <thead><tr><th></th><th>Leistung</th><th class="r">Preis netto</th></tr></thead>
+    <thead><tr><th>Leistung</th><th class="r">Preis netto</th></tr></thead>
     <tbody>
-      <tr><td class="pos">01</td><td><div class="t">Vorproduktion &amp; Drehvorbereitung</div><div class="s">Filmstruktur je Film, Drehplan, Shotlists, Interviewleitfäden, Briefing der Partnerteams</div></td><td class="r">5.000&nbsp;€</td></tr>
-      <tr><td class="pos">02</td><td><div class="t">Dreh Deutschland &amp; Italien</div><div class="s">4 Drehtage mit dem EYELIKE-Team (3&nbsp;Personen, bis 10&nbsp;h) inkl. An- und Abreise Italien · Kamera-, Licht-, Ton- und Drohnentechnik</div></td><td class="r">14.000&nbsp;€</td></tr>
-      <tr><td class="pos">03</td><td><div class="t">Dreh China &amp; USA</div><div class="s">2 Partner-Drehtage · Remote-Regie, Datentransfer, Übersetzung</div></td><td class="r">4.800&nbsp;€</td></tr>
-      <tr><td class="pos">04</td><td><div class="t">Reise &amp; Logistik</div><div class="s">Transporte zu allen Drehorten inkl. Inlandsflug USA</div></td><td class="r">2.600&nbsp;€</td></tr>
-      <tr><td class="pos">05</td><td><div class="t">Postproduktion Imagefilm</div><div class="s">Schnitt, Grading, Sounddesign, Musik, Design-Kit, Untertitel EN/DE</div></td><td class="r">7.000&nbsp;€</td></tr>
-      <tr><td class="pos">06</td><td><div class="t">Postproduktion vier Kurzfilme</div><div class="s">Schnitt, Grading, Sound, Musik, Untertitel EN/DE · inkl. Animation</div></td><td class="r">9.700&nbsp;€</td></tr>
-      <tr><td class="pos">07</td><td><div class="t">Produktionsleitung &amp; Partnerteams</div><div class="s">Produktionsleitung für fünf Filme, Steuerung und Qualitätssicherung der Partnerteams, Lieferplan und gestaffelte Abnahmen bis Januar 2028</div></td><td class="r">5.900&nbsp;€</td></tr>
-      <tr class="sub"><td></td><td class="t2">Festpreis Produktion <span>· wie Juni-Angebot</span></td><td class="r">49.000&nbsp;€</td></tr>
-      <tr><td class="pos">08</td><td><div class="t">Übernachtung &amp; Verpflegung · Pauschale</div><div class="s">Drehreisen Italien, China und USA · auf Basis amtlicher Verpflegungssätze und regionaler Hotelpreise · ersetzt die Abrechnung „nach tatsächlichem Aufwand“ aus dem Juni-Angebot</div></td><td class="r">2.000&nbsp;€</td></tr>
+      <tr class="key"><td><div class="t">Konzeption &amp; Kreation</div><div class="s">Ideenfindung und Leitidee, Storyline und Dramaturgie für fünf Filme, Interviewkonzept, Drehplan und Shotlists, Briefing der Partnerteams, Kickoff-Workshop und Abstimmung mit SurTec</div></td><td class="r">8.500&nbsp;€</td></tr>
+      <tr><td><div class="t">Dreh Deutschland &amp; Italien</div><div class="s">4 Drehtage mit dem EYELIKE-Team (3&nbsp;Personen, bis 10&nbsp;h) · Kamera-, Licht-, Ton- und Drohnentechnik</div></td><td class="r">12.500&nbsp;€</td></tr>
+      <tr><td><div class="t">Dreh China &amp; USA</div><div class="s">2 Partner-Drehtage · Remote-Regie, Datentransfer, Übersetzung</div></td><td class="r">4.000&nbsp;€</td></tr>
+      <tr><td><div class="t">Reise, Logistik &amp; Unterbringung</div><div class="s">Transporte zu allen Drehorten inkl. Inlandsflug USA, Übernachtung und Verpflegung</div></td><td class="r">3.500&nbsp;€</td></tr>
+      <tr><td><div class="t">Postproduktion Imagefilm</div><div class="s">Schnitt, Grading, Sounddesign, Musik, Design-Kit, Untertitel EN/DE</div></td><td class="r">7.000&nbsp;€</td></tr>
+      <tr><td><div class="t">Postproduktion vier Kurzfilme</div><div class="s">Schnitt, Grading, Sound, Musik, Untertitel EN/DE · inkl. Animation</div></td><td class="r">9.500&nbsp;€</td></tr>
+      <tr><td><div class="t">Produktionsleitung &amp; Partnerteams</div><div class="s">Steuerung und Qualitätssicherung der Partnerteams, Lieferplan und gestaffelte Abnahmen bis Januar 2028</div></td><td class="r">4.000&nbsp;€</td></tr>
     </tbody>
   </table>
 
@@ -443,21 +495,25 @@ table{width:100%;border-collapse:collapse}
     <div class="l">
       <div class="k">Gesamtpaket all-in</div>
       <div class="h">Fünf Filme · sechs Drehtage · vier Länder</div>
-      <div class="s">Festpreis 49.000&nbsp;€ + Übernachtung &amp; Verpflegung 2.000&nbsp;€ · netto zzgl. USt.<br>Keine Nachforderungen für Reise, Hotel oder Verpflegung im beschriebenen Leistungsumfang.</div>
+      <div class="s">Netto zzgl. USt. · inklusive Reise, Übernachtung und Verpflegung.<br>Keine Nachforderungen im beschriebenen Leistungsumfang.</div>
     </div>
-    <div class="amt">51.000<small>€</small></div>
+    <div class="amt">49.000<small>€</small></div>
   </div>
 
   <div class="bars">
     <div class="bar"><div class="row"><span>Regulärer Projektwert</span><span>ca. 72.000&nbsp;€</span></div><div class="track"><div class="fillb" style="width:100%"></div></div></div>
-    <div class="bar"><div class="row"><span>Ihr Gesamtpaket</span><span class="red">51.000&nbsp;€</span></div><div class="track"><div class="fillb red" style="width:70.8%"></div></div></div>
+    <div class="bar"><div class="row"><span>Ihr Gesamtpaket</span><span style="color:var(--red-text)">49.000&nbsp;€</span></div><div class="track"><div class="fillb red" style="width:68.1%"></div></div></div>
   </div>
 
+  <div class="note" style="margin-top:5mm">
+    <h3>Kalkuliert ohne Gewinnaufschlag und ohne Risikopuffer</h3>
+    <p>Wir sehen SurTec als langfristigen Partner und haben dieses Paket bewusst so kalkuliert. Für Sie heißt das: Der Preis ist verbindlich, das Kalkulationsrisiko tragen wir. Deshalb ist der Leistungsumfang genau beschrieben – Sie wissen exakt, was Sie bekommen. Alles, was darüber hinausgeht, erhalten Sie zu festen Preisen, die Sie vorher kennen.</p>
+  </div>
 
-  <footer class="foot"><span>EYELIKE · Angebot Imagefilm SurTec 2027</span><span class="pg">Seite 04</span></footer>
+  <footer class="foot"><span>EYELIKE · Angebot Imagefilm SurTec 2027</span><span class="pg">5</span></footer>
 </section>
 
-<!-- =============== SEITE 5 · JUNI → JETZT · ZAHLUNG =============== -->
+<!-- =============== JUNI → JETZT · ZAHLUNG =============== -->
 <section class="page">
   <header class="head">
     <div class="wordmark"><img class="logo" src="assets/eyelike-auge.png" alt=""><span><span class="eye">EYE</span>LIKE</span></div>
@@ -465,37 +521,42 @@ table{width:100%;border-collapse:collapse}
   </header>
 
   <div class="sec-head">
-    <span class="eyebrow">04 · Vom Juni-Angebot zum Fünf-Filme-Paket</span>
-    <h2>Gleicher Festpreis.<br>Neu verteilt auf fünf Filme.</h2>
+    <span class="eyebrow">Vom Juni-Angebot zum Fünf-Filme-Paket</span>
+    <h2>Gleicher Preis.<br>Fünf Filme. Alles inklusive.</h2>
   </div>
 
   <table class="cmp" style="margin-top:5.5mm">
     <thead><tr><th>Leistung</th><th>Juni-Angebot<br>1 Film · DE + IT</th><th class="new">Jetzt<br>5 Filme · DE · IT · CN · US</th></tr></thead>
     <tbody>
-      <tr><td>Konzeption &amp; Vorproduktion</td><td><b>7.000&nbsp;€</b></td><td><b>5.000&nbsp;€</b>Themen und Kernbotschaften von SurTec, Filmstruktur und Drehplan von EYELIKE</td></tr>
-      <tr><td>Drehtage</td><td><b>19.200&nbsp;€</b>6 EYELIKE-Drehtage</td><td><b>18.800&nbsp;€</b>4 EYELIKE- und 2 Partner-Drehtage</td></tr>
-      <tr><td>Reise &amp; Logistik</td><td><b>2.900&nbsp;€</b>Rundreise DE + Italien</td><td><b>2.600&nbsp;€</b>München und Schwelm entfallen, China und USA kommen hinzu</td></tr>
+      <tr><td>Konzeption</td><td><b>7.000&nbsp;€</b>für einen Film</td><td><b>8.500&nbsp;€</b>Leitidee und Dramaturgie für fünf Filme</td></tr>
+      <tr><td>Drehtage</td><td><b>19.200&nbsp;€</b>6 EYELIKE-Drehtage</td><td><b>16.500&nbsp;€</b>4 EYELIKE- und 2 Partner-Drehtage</td></tr>
+      <tr><td>Reise &amp; Logistik</td><td><b>2.900&nbsp;€</b>Rundreise DE + Italien</td><td><b>3.500&nbsp;€</b>inkl. Übernachtung und Verpflegung</td></tr>
       <tr><td>Bildwelten &amp; CGI</td><td><b>2.400&nbsp;€</b></td><td><b>entfällt</b>Budget fließt in die Kurzfilme</td></tr>
-      <tr><td>Postproduktion</td><td><b>17.500&nbsp;€</b>1 Film + 3 Cutdowns, Untertitel in 9 Sprachen</td><td><b>16.700&nbsp;€</b>Imagefilm + 4 Kurzfilme, Untertitel EN/DE · weitere Sprachen und Cutdowns optional</td></tr>
-      <tr><td>Produktionsleitung</td><td><b>–</b>nicht separat ausgewiesen</td><td><b>5.900&nbsp;€</b>5 Filme, Partnerteams in zwei Ländern, gestaffelte Lieferung bis 01/2028</td></tr>
-      <tr class="fp"><td>Festpreis</td><td><b>49.000&nbsp;€</b></td><td><b>49.000&nbsp;€</b></td></tr>
-      <tr><td>Übernachtung &amp; Verpflegung</td><td><b>nach tatsächlichem Aufwand</b>nicht im Festpreis</td><td><b>2.000&nbsp;€ Pauschale</b>keine Nachforderung</td></tr>
-      <tr class="tot"><td>Gesamt</td><td><b>49.000&nbsp;€ zzgl. Aufwand</b></td><td class="new"><b>51.000&nbsp;€ all-in</b></td></tr>
+      <tr><td>Postproduktion</td><td><b>17.500&nbsp;€</b>1 Film + 3 Cutdowns, Untertitel in 9 Sprachen</td><td><b>16.500&nbsp;€</b>Imagefilm + 4 Kurzfilme, Untertitel EN/DE · weitere Sprachen und Cutdowns als Erweiterung</td></tr>
+      <tr><td>Produktionsleitung</td><td><b>–</b>nicht separat ausgewiesen</td><td><b>4.000&nbsp;€</b>Partnerteams in zwei Ländern, gestaffelte Lieferung</td></tr>
+      <tr class="fp"><td>Preis</td><td><b>49.000&nbsp;€</b></td><td><b>49.000&nbsp;€</b></td></tr>
+      <tr><td>Übernachtung &amp; Verpflegung</td><td><b>zusätzlich nach Aufwand</b></td><td><b>inklusive</b></td></tr>
+      <tr class="tot"><td>Gesamt</td><td><b>49.000&nbsp;€ zzgl. Aufwand</b></td><td class="new"><b>49.000&nbsp;€ all-in</b></td></tr>
     </tbody>
   </table>
 
-  <p style="margin-top:3.5mm;font-size:8.2pt;line-height:15px;max-width:172mm">Der Festpreis bleibt bei 49.000&nbsp;€; das Budget verlagert sich von Reisen und Extras in vier zusätzliche Filme. Neu ist allein ein fester Betrag für Übernachtung und Verpflegung: Im Juni-Angebot waren diese Kosten nicht im Festpreis enthalten, sondern „nach tatsächlichem Aufwand“ vorgesehen. Jetzt stehen sie mit 2.000&nbsp;€ fest – ohne spätere Abrechnung oder Nachforderung. Nach dem Juni-Reiseplan mit München und Schwelm wäre dieser Posten voraussichtlich etwa doppelt so hoch ausgefallen.</p>
+  <p style="margin-top:3.5mm;font-size:8.2pt;line-height:15px;max-width:172mm">Der Preis bleibt bei 49.000&nbsp;€. Das Budget verlagert sich von Reisen und Extras in vier zusätzliche Filme – und Übernachtung und Verpflegung, im Juni-Angebot noch zusätzlich nach Aufwand, sind jetzt enthalten.</p>
 
-  <div class="note" style="margin-top:6mm">
-    <h3>Kalkuliert ohne Gewinnaufschlag und ohne Risikopuffer</h3>
-    <p>Wir sehen SurTec als langfristigen Partner und haben dieses Paket bewusst so kalkuliert. Für Sie heißt das: Der Festpreis ist verbindlich, das Kalkulationsrisiko tragen wir. Deshalb ist der Leistungsumfang genau beschrieben – Sie wissen exakt, was Sie bekommen. Alles, was darüber hinausgeht, erhalten Sie zu festen Preisen, die Sie vorher kennen (Seite&nbsp;06).</p>
+  <div class="sec-head" style="margin-top:9mm">
+    <span class="eyebrow">Zahlungsplan</span>
+    <h2 style="font-size:16pt">Planbar über zwei Budgetjahre</h2>
   </div>
+  <div class="pay">
+    <div class="payc"><span class="label">Erste Teilrechnung</span><div class="amt">28.500&nbsp;€</div><p>Konzeption, sechs Drehtage inkl. Partnerteams, Reise und Unterbringung</p><div class="when">Rechnung im Januar 2027 · zahlbar vor dem ersten Drehtag</div></div>
+    <div class="payc"><span class="label">Zweite Teilrechnung</span><div class="amt">11.500&nbsp;€</div><p>Postproduktion Imagefilm und erster Kurzfilm, anteilig Produktionsleitung</p><div class="when">Bei Lieferung Imagefilm + erster Kurzfilm</div></div>
+    <div class="payc"><span class="label">Schlussrechnung</span><div class="amt">9.000&nbsp;€</div><p>Übrige drei Kurzfilme, anteilig Produktionsleitung</p><div class="when">Bei Lieferung · spätestens 31.01.2028</div></div>
+  </div>
+  <p class="small" style="margin-top:3mm">Erste und zweite Teilrechnung zusammen 40.000&nbsp;€ (Budget 2027), Schlussrechnung 9.000&nbsp;€. Zahlbar innerhalb von 14&nbsp;Tagen ohne Abzug, die erste Teilrechnung spätestens vor dem ersten Drehtag.</p>
 
-
-  <footer class="foot"><span>EYELIKE · Angebot Imagefilm SurTec 2027</span><span class="pg">Seite 05</span></footer>
+  <footer class="foot"><span>EYELIKE · Angebot Imagefilm SurTec 2027</span><span class="pg">6</span></footer>
 </section>
 
-<!-- =============== SEITE 6 · OPTIONEN =============== -->
+<!-- =============== ERWEITERUNGEN =============== -->
 <section class="page">
   <header class="head">
     <div class="wordmark"><img class="logo" src="assets/eyelike-auge.png" alt=""><span><span class="eye">EYE</span>LIKE</span></div>
@@ -503,58 +564,78 @@ table{width:100%;border-collapse:collapse}
   </header>
 
   <div class="sec-head">
-    <span class="eyebrow">05 · Zahlungsplan</span>
-    <h2>Drei Teilrechnungen</h2>
-    <div class="pay">
-      <div class="payc"><span class="label">Teilrechnung 1</span><div class="amt">26.400&nbsp;€</div><p>Vorproduktion, sechs Drehtage inkl. Partnerteams, Logistik</p><div class="when">Rechnung im Januar 2027 · zahlbar vor dem ersten Drehtag</div></div>
-      <div class="payc"><span class="label">Teilrechnung 2</span><div class="amt">13.600&nbsp;€</div><p>Postproduktion Imagefilm und Kurzfilm&nbsp;1, anteilig Produktionsleitung</p><div class="when">Bei Lieferung Imagefilm + Kurzfilm&nbsp;1</div></div>
-      <div class="payc"><span class="label">Teilrechnung 3</span><div class="amt">11.000&nbsp;€</div><p>Kurzfilme 2–4 und anteilig Produktionsleitung (9.000&nbsp;€) + Übernachtung &amp; Verpflegung (2.000&nbsp;€)</p><div class="when">Bei Lieferung · spätestens 31.01.2028</div></div>
-    </div>
-    <p class="small" style="margin-top:3mm">Teilrechnung 1 + 2: 40.000&nbsp;€ (Budget 2027) · Teilrechnung 3: 11.000&nbsp;€ = 9.000&nbsp;€ Festpreis-Rest + 2.000&nbsp;€ Übernachtung &amp; Verpflegung. Zahlbar innerhalb von 14&nbsp;Tagen ohne Abzug, Teilrechnung 1 spätestens vor dem ersten Drehtag.</p>
+    <span class="eyebrow">Erweiterungen</span>
+    <h2>Mehr aus demselben Material</h2>
+    <p class="lead" style="margin-top:3.5mm;max-width:168mm">Die sechs Drehtage liefern weit mehr als fünf Filme. Diese Pakete sind nicht im Angebot enthalten – Sie können sie bis zur Lieferung im Januar 2028 zu festen Preisen dazubuchen.</p>
   </div>
 
-  <div class="sec" style="margin-top:9mm">
-    <span class="eyebrow">06 · Optionen</span>
-    <h2 style="font-size:16pt">Optionen zu Festpreisen</h2>
-    <p style="margin-top:2.5mm;max-width:165mm">Nicht im Paket und nicht Teil der Bestellung. Bei Bedarf bis zur Lieferung im Januar 2028 zu diesen festen Preisen buchbar.</p>
+  <div class="pkgs">
+    <div class="pkg">
+      <span class="label">Social Media</span>
+      <h3>LinkedIn-Paket</h3>
+      <ul><li>10 Clips aus den Interviews</li><li>je in 16:9 und 9:16</li><li>untertitelt, im Look der Filme</li></ul>
+      <div class="p"><span>Paketpreis</span><b>3.900&nbsp;€</b></div>
+    </div>
+    <div class="pkg">
+      <span class="label">Formate</span>
+      <h3>Imagefilm-Social-Paket</h3>
+      <ul><li>Cutdowns mit 60, 30 und 15&nbsp;Sekunden</li><li>je in 16:9 und 9:16</li><li>für Website, Ads und Messe</li></ul>
+      <div class="p"><span>Paketpreis</span><b>2.400&nbsp;€</b></div>
+    </div>
+    <div class="pkg">
+      <span class="label">Formate</span>
+      <h3>Hochformat-Paket</h3>
+      <ul><li>alle vier Kurzfilme zusätzlich in 9:16</li><li>für LinkedIn, Instagram und Reels</li><li>untertitelt</li></ul>
+      <div class="p"><span>Paketpreis</span><b>2.500&nbsp;€</b></div>
+    </div>
+    <div class="pkg">
+      <span class="label">Sprachen</span>
+      <h3>Sprachen-Paket</h3>
+      <ul><li>drei weitere Untertitelsprachen</li><li>für alle fünf Filme</li><li>Übersetzung und Einbau</li></ul>
+      <div class="p"><span>Paketpreis</span><b>1.700&nbsp;€</b></div>
+    </div>
+    <div class="pkg">
+      <span class="label">Sprachen</span>
+      <h3>Global-Paket</h3>
+      <ul><li>sieben weitere Untertitelsprachen</li><li>insgesamt neun Sprachen</li><li>für alle fünf Filme</li></ul>
+      <div class="p"><span>Paketpreis</span><b>3.900&nbsp;€</b></div>
+    </div>
+    <div class="pkg">
+      <span class="label">Fotografie</span>
+      <h3>Foto-Paket</h3>
+      <ul><li>Business-Fotografie parallel zum Dreh</li><li>Porträts, Prozesse, Standorte</li><li>im bereits gesetzten Film-Licht</li></ul>
+      <div class="p"><span>Paketpreis</span><b>auf Anfrage</b></div>
+    </div>
+    <div class="pkg wide">
+      <div><span class="label">Weitere Filme</span><h3>Film-Paket</h3></div>
+      <div class="pkg-rows">
+        <div><div class="t">Weiterer Kurzfilm aus vorhandenem Material</div><b>3.500&nbsp;€</b></div>
+        <div><div class="t">precote® und Traxit als zwei getrennte Animationsfilme</div><b>+&nbsp;3.500&nbsp;€</b></div>
+        <div><div class="t">Weiterer Animationsfilm mit eigenem Thema</div><b>ab 5.500&nbsp;€</b></div>
+      </div>
+    </div>
   </div>
 
-  <div class="opts">
-    <div class="optg">
-      <h3>Social Media &amp; Formate</h3>
-      <div class="opt"><span>LinkedIn-Clip aus den Interviews (16:9 + 9:16, untertitelt), je&nbsp;Clip</span><span>450&nbsp;€</span></div>
-      <div class="opt"><span>Cutdown 15/30/60&nbsp;s aus fertigem Film</span><span>450&nbsp;€</span></div>
-      <div class="opt"><span>Hochformat 9:16 · Kurzfilm</span><span>750&nbsp;€</span></div>
-      <div class="opt"><span>Hochformat 9:16 · Imagefilm</span><span>1.100&nbsp;€</span></div>
-    </div>
-    <div class="optg">
-      <h3>Weitere Filme</h3>
-      <div class="opt"><span>Weiterer Kurzfilm aus vorhandenem Material</span><span>3.500&nbsp;€</span></div>
-      <div class="opt"><span>precote® und Traxit als zwei getrennte Animationsfilme</span><span>+&nbsp;3.500&nbsp;€</span></div>
-      <div class="opt"><span>Weiterer Animationsfilm mit eigenem Thema</span><span>ab 5.500&nbsp;€</span></div>
-      <div class="opt"><span>Animation über das Kontingent hinaus, je&nbsp;Sekunde</span><span>120&nbsp;€</span></div>
-    </div>
-    <div class="optg">
-      <h3>Dreh</h3>
-      <div class="opt"><span>Zusätzlicher Drehtag Deutschland (3&nbsp;Personen, 10&nbsp;h)</span><span>3.900&nbsp;€</span></div>
-      <div class="opt"><span>Zusätzlicher Halbtag Deutschland</span><span>2.200&nbsp;€</span></div>
-      <div class="opt"><span>Zusätzlicher Partner-Drehtag China oder USA</span><span>4.200&nbsp;€</span></div>
-      <div class="opt"><span>Zusätzliches Interview an einem bestehenden Drehtag</span><span>400&nbsp;€</span></div>
-    </div>
-    <div class="optg">
-      <h3>Sprache, Abstimmung &amp; Service</h3>
-      <div class="opt"><span>Weitere Untertitelsprache, alle fünf Filme</span><span>650&nbsp;€</span></div>
-      <div class="opt"><span>Professioneller Sprecher EN, je&nbsp;Film</span><span>650&nbsp;€</span></div>
-      <div class="opt"><span>Zusätzliche Korrekturschleife Kurzfilm&nbsp;/&nbsp;Imagefilm</span><span>550&nbsp;/&nbsp;850&nbsp;€</span></div>
-      <div class="opt"><span>Business-Fotografie parallel zum Dreh</span><span>auf Anfrage</span></div>
-      <div class="opt"><span>Herausgabe des Rohmaterials</span><span>450&nbsp;€</span></div>
+  <div class="singles">
+    <h3>Einzelleistungen</h3>
+    <div class="single-grid">
+      <div>
+        <div class="opt"><span>Zusätzlicher Drehtag Deutschland (3&nbsp;Personen, 10&nbsp;h) / Halbtag</span><span>3.900 / 2.200&nbsp;€</span></div>
+        <div class="opt"><span>Zusätzlicher Partner-Drehtag China oder USA</span><span>4.200&nbsp;€</span></div>
+        <div class="opt"><span>Zusätzliches Interview an einem bestehenden Drehtag</span><span>400&nbsp;€</span></div>
+      </div>
+      <div>
+        <div class="opt"><span>Zusätzliche Korrekturschleife Kurzfilm&nbsp;/&nbsp;Imagefilm</span><span>550 / 850&nbsp;€</span></div>
+        <div class="opt"><span>Professioneller Sprecher EN, je&nbsp;Film</span><span>650&nbsp;€</span></div>
+        <div class="opt"><span>Herausgabe des Rohmaterials</span><span>450&nbsp;€</span></div>
+      </div>
     </div>
   </div>
 
-  <footer class="foot"><span>EYELIKE · Angebot Imagefilm SurTec 2027</span><span class="pg">Seite 06</span></footer>
+  <footer class="foot"><span>EYELIKE · Angebot Imagefilm SurTec 2027</span><span class="pg">7</span></footer>
 </section>
 
-<!-- =============== SEITE 7 · KONDITIONEN & NÄCHSTE SCHRITTE =============== -->
+<!-- =============== RAHMEN & KONTAKT =============== -->
 <section class="page">
   <header class="head">
     <div class="wordmark"><img class="logo" src="assets/eyelike-auge.png" alt=""><span><span class="eye">EYE</span>LIKE</span></div>
@@ -562,14 +643,14 @@ table{width:100%;border-collapse:collapse}
   </header>
 
   <div class="sec-head">
-    <span class="eyebrow">07 · Rahmen &amp; Konditionen</span>
-    <h2>Klar geregelt</h2>
+    <span class="eyebrow">Rahmen &amp; Konditionen</span>
+    <h2>Fair und verbindlich</h2>
   </div>
 
   <div class="conds">
     <div class="cond"><b>Preise</b>Alle Preise netto zzgl. gesetzlicher USt. Das Gesamtpaket umfasst alle hier beschriebenen Leistungen inklusive Reise, Übernachtung und Verpflegung.</div>
-    <div class="cond"><b>Bestellung</b>Bestellung über 51.000&nbsp;€ netto mit Bezug auf dieses Angebot vom 09.11.2026. Angebot und Zahlungsplan sind Bestandteil der Bestellung; bitte je Teilrechnung die Kostenstelle angeben.</div>
-    <div class="cond"><b>Verbindlichkeit</b>Verbindlich ist diese Leistungsbeschreibung. Konzept und Drehplan vom Juni 2026 dienen als kreative Referenz; Leistungen daraus, die hier nicht beschrieben sind (u.&nbsp;a. Sprecher, Cutdowns, weitere Untertitelsprachen, Fotografie), sind nicht enthalten und als Option buchbar.</div>
+    <div class="cond"><b>Bestellung</b>Bestellung über 49.000&nbsp;€ netto mit Bezug auf dieses Angebot vom 09.11.2026. Angebot und Zahlungsplan sind Bestandteil der Bestellung; bitte je Teilrechnung die Kostenstelle angeben.</div>
+    <div class="cond"><b>Verbindlichkeit</b>Verbindlich ist diese Leistungsbeschreibung. Konzept und Drehplan vom Juni 2026 dienen als kreative Referenz; Leistungen daraus, die hier nicht beschrieben sind (u.&nbsp;a. Sprecher, Cutdowns, weitere Untertitelsprachen, Fotografie), sind nicht enthalten und als Erweiterung buchbar.</div>
     <div class="cond"><b>Themen &amp; Material</b>Mit der Freigabe des Drehplans stehen die Themen der Kurzfilme fest. Alle Filme entstehen aus dem Material der sechs Drehtage und dem vereinbarten Animationsanteil.</div>
     <div class="cond"><b>Feedback &amp; Freigabe</b>Zwei Korrekturschleifen je Film (Rohschnitt, Feinschnitt), Feedback gebündelt über eine Ansprechpartnerin. Damit Freigaben zügig laufen, sehen alle Freigebenden spätestens den Rohschnitt. Rückmeldung innerhalb von 10&nbsp;Werktagen.</div>
     <div class="cond"><b>Termine</b>Drehtermine sind bis 10&nbsp;Werktage vorher kostenfrei verschiebbar. Danach berechnen wir nur bereits entstandene, nicht stornierbare Kosten.</div>
@@ -580,25 +661,18 @@ table{width:100%;border-collapse:collapse}
     <div class="cond"><b>Gültigkeit</b>Dieses Angebot ist gültig bis 15.12.2026.</div>
   </div>
 
-  <div class="closing">
-    <div class="glow"></div>
-    <span class="eyebrow">Nächster Schritt</span>
-    <h2>Bereit, SurTec<br>in fünf Filmen zu erzählen?</h2>
-    <p class="lead">Mit Ihrer Freigabe und der Bestellung starten wir in die Vorproduktion. Im Kickoff legen wir gemeinsam Themen, Protagonist:innen und Drehfenster fest.</p>
-    <div class="steps">
-      <div class="step"><div class="n">01</div><div class="t">Freigabe &amp; Bestellung</div><div class="w">Nov./Dez. 2026</div></div>
-      <div class="step"><div class="n">02</div><div class="t">Kickoff &amp; Konzeption</div><div class="w">ab Januar 2027</div></div>
-      <div class="step"><div class="n">03</div><div class="t">Drehs<br>DE · IT · CN · US</div><div class="w">März–Juni 2027</div></div>
-      <div class="step"><div class="n">04</div><div class="t">Imagefilm + Kurzfilm 1</div><div class="w">bis Q3 2027</div></div>
-      <div class="step"><div class="n">05</div><div class="t">Kurzfilme 2–4</div><div class="w">bis 01/2028</div></div>
-    </div>
-    <div class="sign">
+  <div class="ph closing" style="--img:url('assets/02_chrome_handle.jpg')">
+    <div class="shade"></div>
+    <span class="eyebrow">Gemeinsam</span>
+    <h2>Machen wir sichtbar,<br>was SurTec ausmacht.</h2>
+    <p class="lead">Mit Ihrer Freigabe starten wir in die Konzeption. Wir freuen uns darauf, die Geschichte von SurTec in fünf Filmen zu erzählen.</p>
+    <div class="sign"><div class="sign-in">
       <div><div class="name">Maximilian Zaksek</div><div class="role">Geschäftsführer &amp; Creative Director</div><div class="contact">max@eyelike.agency · 0176&nbsp;47138405</div></div>
       <div class="wordmark"><img class="logo" src="assets/eyelike-auge-hell.png" alt=""><span><span class="eye" style="color:var(--red-on-dark)">EYE</span><span class="like">LIKE</span></span></div>
-    </div>
+    </div></div>
   </div>
 
-  <footer class="foot"><span>EYELIKE · Angebot Imagefilm SurTec 2027</span><span class="pg">Seite 07</span></footer>
+  <footer class="foot"><span>EYELIKE · Angebot Imagefilm SurTec 2027</span><span class="pg">8</span></footer>
 </section>
 
 </body>

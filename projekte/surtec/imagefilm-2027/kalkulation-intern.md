@@ -2,6 +2,37 @@
 
 **Stand:** 08.11.2026 · geprüft (Reisekosten mit Webquellen, Rechenmodell gegengelesen) · **nur intern**
 
+## Entscheidung 08.11.2026 (Max): 49.000 € all-in
+
+Das Angebot bleibt bei **49.000 € netto inklusive Reise, Übernachtung und Verpflegung** (Variante V0 unten). Die Nebenkostenpauschale von 2.000 € entfällt, die Kosten trägt EYELIKE.
+
+| | Max 900 €/PT | Max 700 €/PT |
+|---|---:|---:|
+| Selbstkosten | 62.519 € | 58.719 € |
+| Ergebnis bei 49.000 € | −13.519 € | −9.719 € |
+| Max effektiv (nach Bezahlung aller anderen) | ca. 190 €/PT | |
+
+**Preisaufteilung im Angebot (Kundensicht, Summe 49.000 €):**
+
+| Position | € |
+|---|---:|
+| Konzeption & Kreation (Schwerpunkt) | 8.500 |
+| Dreh Deutschland & Italien | 12.500 |
+| Dreh China & USA | 4.000 |
+| Reise, Logistik & Unterbringung | 3.500 |
+| Postproduktion Imagefilm | 7.000 |
+| Postproduktion vier Kurzfilme | 9.500 |
+| Produktionsleitung & Partnerteams | 4.000 |
+
+**Zahlungsplan:**
+- Erste Teilrechnung 28.500 € (Januar 2027, vor dem ersten Drehtag)
+- Zweite Teilrechnung 11.500 € (Lieferung Imagefilm + erster Kurzfilm)
+- Schlussrechnung 9.000 € (spätestens 31.01.2028)
+
+**Marge kommt nur über Erweiterungen:** LinkedIn-Paket 3.900 €, Social-Cutdowns 2.400 €, Hochformat 2.500 €, Sprachen 1.700 € / 3.900 €, weitere Filme.
+
+Die Abschnitte unten (51.000 €) dokumentieren den Rechenweg vor dieser Entscheidung.
+
 ## Kernaussagen
 
 1. **Basis ist das 49.000-€-Angebot vom Juni, das auch das Management kennt.**

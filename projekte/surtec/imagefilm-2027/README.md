@@ -8,23 +8,14 @@
 - **Was Max zugesagt hat:** am 05.11. mündlich 5 Filme, 49.000 €, 6 Drehtage in DE/IT/CN/US.
 - **Was das Juni-Angebot sagt:** Übernachtung und Verpflegung „nach Aufwand“, also nicht im Festpreis. Das Management kennt dieses Angebot.
 
-## Ergebnis der Kalkulation (v2, geprüft)
+## Stand Angebot (08.11.2026)
 
-| | Wert |
-|---|---:|
-| **Paketpreis** | **51.000 € all-in** (49.000 € Festpreis + 2.000 € Pauschale Übernachtung & Verpflegung) |
-| Selbstkosten | 62.500 € (Max 900 €/PT) bzw. 58.700 € (Max 700 €/PT) |
-| Ergebnis | −11.500 € bzw. −7.700 € |
-| Max effektiv | ca. 290 €/Tag |
-| Reisekosten gesamt | ca. 4.300 € (Mentor: 12–15k) |
-| Externe Kosten | ca. 23.600 € |
-| Marktpreis für dieses Paket | 65–105k; EYELIKE regulär ca. 72k |
+- **Paketpreis 49.000 € netto all-in** (inkl. Reise, Übernachtung, Verpflegung), Entscheidung Max.
+- Konzeption & Kreation als Schwerpunkt (8.500 €), Erweiterungen als Pakete.
+- Gestaltetes Angebot: 8 Seiten, Logo, Bildplätze für die Juni-Bilder (Bilder fehlen noch, siehe unten).
+- Intern: Selbstkosten 62.500 € (Max 900 €/PT) → −13.500 €; Marge nur über Erweiterungen.
 
-**Empfehlung:**
-- Mit 51.000 € all-in einsteigen.
-- Umfang über Formate festschreiben, alles andere on top (Preisliste).
-- Rückfallposition: 49.000 € all-in mit 5 statt 6 Drehtagen. Für uns wirtschaftlich gleichwertig.
-- „Mehr Videos“ nur gegen Aufpreis.
+**Offen:** Bilder aus `Konzept & Angebot 06-2026/assets/` (Download in dieser Sitzung blockiert), Bestätigung LinkedIn-Paketpreis, Kontaktdaten, Vertraulichkeitsklausel.
 
 ## Dateien
 
