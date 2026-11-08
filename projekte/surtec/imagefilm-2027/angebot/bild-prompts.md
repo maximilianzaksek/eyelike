@@ -109,16 +109,20 @@ Bright silver wire running out of a drawing die in a wire drawing machine, a fai
 
 ---
 
-## Zuordnung im Angebot nach Eingang der Bilder
+## Zuordnung im Angebot (Stand 08.11.2026, ChatGPT-Motive von Max)
 
-| Platz | bisher | neu |
+| Platz | Motiv | Datei |
 |---|---|---|
-| Cover | Kristalle (03) | bleibt |
-| Imagefilm-Karte | Chrom-Türgriff (02) | bleibt |
-| Kachel Centre of Competence Italien | Felge (05) | **D Anodisieren** |
-| Kachel Galvanotechnik & Innovation | Teilereinigung (04) | **E Galvanotechnik** |
-| Kachel precote® & Traxit | Bernstein-Makro (01) | **B precote-Schrauben** |
-| Kachel China & USA | typografisch | bleibt |
-| Konzeption | Felge (Alltag) + Kristalle | bleibt |
-| Produktion, Bildleiste | Teilereinigung (04) | **A Vorbehandlung, F Labor (Juni), C Interview** |
-| Abschluss | Bernstein-Makro (01) | bleibt |
+| Cover | Alu-Batteriegehäuse aus dem Vorbehandlungsbad | `neu_vorbehandlung.jpg` |
+| Imagefilm-Karte | Team mit Bauteil an der Anlage | `neu_team.jpg` |
+| Kachel Centre of Competence Italien | Alu-Fassade | `neu_fassade.jpg` |
+| Kachel Galvanotechnik & Innovation | Gestell über dem Spülbad | `neu_galvanik.jpg` |
+| Kachel precote® & Traxit | Schrauben mit precote-Bändern | `neu_precote.jpg` |
+| Kachel China & USA | typografisch | – |
+| Konzeption „Alltag“ | Collage: E-Auto, Flugzeug, Windrad, Smartphone | `neu_auto/flugzeug/wind/smartphone.jpg` |
+| Konzeption „Unter der Oberfläche“ | Mikroskop | `neu_mikroskop.jpg` |
+| Produktion, Bildleiste | Labor-Team, Pipette, Teilereinigung | `neu_labor_team.jpg`, `neu_labor_pipette.jpg`, `neu_teilereinigung.jpg` |
+| Abschluss | Chromarmaturen (gespiegelt) | `neu_armaturen.jpg` |
+| Reserve | Offshore-Windpark | `neu_offshore.jpg` |
+
+Die alten Motive 01–05 werden im Angebot nicht mehr verwendet.
