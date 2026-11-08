@@ -17,7 +17,7 @@ danke für Deine Geduld, und noch einmal danke, dass Du Dich beim Management und
 - **Übernachtung & Verpflegung:** 2.000 € pauschal
 - **Gesamtpaket all-in: 51.000 € netto**
 
-Zu den 2.000 €: In unserem Angebot vom Juni, das auch Eurem Management vorlag, waren Übernachtung und Verpflegung nicht im Festpreis enthalten, sondern sollten nach Aufwand abgerechnet werden. Damit Ihr ein echtes Gesamtpaket mit voller Budgetsicherheit habt, haben wir diese Kosten jetzt fest eingerechnet, zu den amtlichen Sätzen und ohne Aufschlag. Weil die Drehreisen nach München und Schwelm entfallen, ist das weniger als die Hälfte dessen, was nach dem ursprünglichen Plan angefallen wäre.
+Zu den 2.000 €: In unserem Angebot vom Juni, das auch Eurem Management vorlag, waren Übernachtung und Verpflegung nicht im Festpreis enthalten, sondern sollten nach Aufwand abgerechnet werden. Damit Ihr ein echtes Gesamtpaket mit voller Budgetsicherheit habt, haben wir diese Kosten jetzt fest eingerechnet, zu den amtlichen Sätzen und ohne Aufschlag. Weil die Drehreisen nach München und Schwelm entfallen, ist das rund die Hälfte dessen, was nach dem ursprünglichen Plan angefallen wäre.
 
 Ich will offen mit Dir sein: An diesem Projekt verdienen wir nichts. Das Paket ist ohne Gewinnmarge und ohne Risikopuffer kalkuliert. Zu unseren regulären Sätzen läge es bei rund 72.000 €. Das machen wir bewusst, weil wir SurTec als langfristigen Partner sehen und an dieses Projekt glauben. Es heißt aber auch, dass der Rahmen keinen Spielraum hat. Deshalb haben wir den Umfang sehr genau beschrieben. So wisst Ihr genau, was Ihr bekommt, und alles, was darüber hinausgeht, machen wir gern, zu festen Preisen, die Ihr vorher kennt.
 

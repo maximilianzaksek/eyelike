@@ -127,7 +127,7 @@ Dafür steigen die **eigenen Personentage von 58,5 auf 60,5**. Gründe:
 | Übernachtung & Verpflegung | nach Aufwand (Juni-Plan ca. 3.600–4.300) | **Pauschale 2.000** |
 | **Gesamt** | **49.000 + Aufwand** | **51.000 all-in** |
 
-**So erzählt:** Der Festpreis bleibt. Das Budget verlagert sich vom Reisen (München, Schwelm) und von Extras (Cutdowns, 9 Sprachen) in vier zusätzliche Filme. Übernachtung und Verpflegung, im Juni noch offen, sind jetzt fest gedeckelt und kosten weniger als die Hälfte.
+**So erzählt:** Der Festpreis bleibt. Das Budget verlagert sich vom Reisen (München, Schwelm) und von Extras (Cutdowns, 9 Sprachen) in vier zusätzliche Filme. Übernachtung und Verpflegung, im Juni noch offen, sind jetzt fest gedeckelt und kosten rund die Hälfte.
 
 ## 5. Ist das günstig? Ja, sehr.
 

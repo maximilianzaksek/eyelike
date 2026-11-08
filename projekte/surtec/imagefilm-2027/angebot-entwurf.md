@@ -70,7 +70,7 @@ Die Themen legt SurTec in der Konzeption fest. Jeder Kurzfilm folgt einem von dr
 | | **Gesamtpaket all-in** | **51.000** |
 
 - **Regulärer Projektwert:** rund 72.000 € netto. Das Paket ist ohne Gewinnaufschlag und ohne Risikopuffer kalkuliert. [Max: Formulierung freigeben]
-- **Gegenüber dem Juni-Angebot:** Der Festpreis bleibt bei 49.000 €. Übernachtung und Verpflegung, damals offen nach Aufwand, sind jetzt fest gedeckelt. Durch den Wegfall der Rundreise München–Schwelm kostet das weniger als die Hälfte des damals zu erwartenden Aufwands.
+- **Gegenüber dem Juni-Angebot:** Der Festpreis bleibt bei 49.000 €. Übernachtung und Verpflegung, damals offen nach Aufwand, sind jetzt fest gedeckelt. Durch den Wegfall der Rundreise München–Schwelm kostet das rund die Hälfte des damals zu erwartenden Aufwands.
 
 ## Zahlungsplan
 
