@@ -131,7 +131,13 @@ p{color:var(--dim)}
 
 /* ---------- Konzeption ---------- */
 .concept{margin-top:6mm;display:grid;grid-template-columns:1fr 1fr;gap:5mm}
-.concept .ph{min-height:96mm}
+.concept .reveal{display:grid;grid-template-rows:1fr 1fr auto;gap:2.5mm}
+.concept .reveal .ph{min-height:46mm}
+.ph .tag{position:absolute;left:3mm;top:3mm;font-size:6.6pt;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:#fff;background:rgba(5,5,6,.55);padding:1mm 2mm;border-radius:2px}
+.cap-out{font-size:6.6pt;color:var(--faint);letter-spacing:.02em;line-height:1.4}
+.ph.globe{display:flex;align-items:center;justify-content:center;gap:2.5mm;font-size:7.4pt;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:#fff}
+.ph.globe i{display:block;width:7mm;height:1px;background:rgba(255,255,255,.35);position:relative}
+.ph.globe i::after{content:"";position:absolute;left:50%;top:50%;width:1.6mm;height:1.6mm;margin:-.8mm 0 0 -.8mm;border-radius:50%;background:var(--red-on-dark)}
 .steps-list{list-style:none;border-top:1px solid var(--ink)}
 .steps-list li{padding:2.7mm 0;border-bottom:1px solid var(--line)}
 .steps-list b{display:block;font-size:8.8pt;font-weight:800;text-transform:uppercase;letter-spacing:-.005em;color:var(--ink)}
@@ -162,8 +168,8 @@ p{color:var(--dim)}
 .day .team{margin-top:auto;padding-top:3mm;font-size:6.8pt;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--ink);line-height:1.35}
 .legend{display:flex;gap:5mm;margin-top:3mm;font-size:7.4pt;color:var(--faint);align-items:center;white-space:nowrap}
 .legend i{display:inline-block;width:3.5mm;height:3.5mm;border-radius:1px;vertical-align:-0.6mm;margin-right:1.6mm}
-.strip{margin-top:5mm;display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:3mm}
-.strip .ph{height:38mm}
+.strip{margin-top:6mm;display:grid;grid-template-columns:1.25fr 1fr;gap:3mm}
+.strip .ph{height:46mm}
 .grid2{display:grid;grid-template-columns:1fr 1fr;gap:4mm}
 .card{border:1px solid var(--line);border-radius:3px;padding:4.6mm 5mm}
 .card h3{margin-top:2.4mm;margin-bottom:2.6mm}
@@ -318,7 +324,7 @@ table{width:100%;border-collapse:collapse}
   </div>
 
   <div class="films">
-    <div class="ph film-main" style="--img:url('assets/13_drone_campus.jpg')">
+    <div class="ph film-main" style="--img:url('assets/02_chrome_handle.jpg')">
       <div class="shade"></div>
       <div class="kind">Hauptfilm</div>
       <h3>Imagefilm</h3>
@@ -326,10 +332,10 @@ table{width:100%;border-collapse:collapse}
       <p>Die übergreifende Geschichte: Standorte, Anwendungsfelder und die Menschen von SurTec – verbunden zu einer Erzählung über vier Länder.</p>
     </div>
     <div class="shorts">
-      <div class="short"><div class="ph" style="--img:url('assets/06_anodisierung.jpg')"></div><div class="txt"><div class="top"><span class="kind">Kurzfilm</span><span class="badge">A</span></div><h3>Centre of Competence Italien</h3><div class="dur">max. 2:00 min</div></div></div>
-      <div class="short"><div class="ph" style="--img:url('assets/11_galvanikbad.jpg')"></div><div class="txt"><div class="top"><span class="kind">Kurzfilm</span><span class="badge">A</span></div><h3>Galvanotechnik &amp; Innovation</h3><div class="dur">max. 2:00 min</div></div></div>
-      <div class="short"><div class="ph" style="--img:url('assets/07_precote.jpg')"></div><div class="txt"><div class="top"><span class="kind">Kurzfilm</span><span class="badge">B</span></div><h3>Neue Felder: precote® &amp; Traxit</h3><div class="dur">max. 2:00 min</div></div></div>
-      <div class="short"><div class="ph" style="--img:url('assets/10_interview.jpg')"></div><div class="txt"><div class="top"><span class="kind">Kurzfilm</span><span class="badge o">C</span></div><h3>SurTec global: China &amp; USA</h3><div class="dur">max. 2:00 min</div></div></div>
+      <div class="short"><div class="ph" style="--img:url('assets/05_vorbehandlung.jpg')"></div><div class="txt"><div class="top"><span class="kind">Kurzfilm</span><span class="badge">A</span></div><h3>Centre of Competence Italien</h3><div class="dur">max. 2:00 min</div></div></div>
+      <div class="short"><div class="ph" style="--img:url('assets/04_teilereinigung.jpg')"></div><div class="txt"><div class="top"><span class="kind">Kurzfilm</span><span class="badge">A</span></div><h3>Galvanotechnik &amp; Innovation</h3><div class="dur">max. 2:00 min</div></div></div>
+      <div class="short"><div class="ph" style="--img:url('assets/01_hero_macro.jpg')"></div><div class="txt"><div class="top"><span class="kind">Kurzfilm</span><span class="badge">B</span></div><h3>Neue Felder: precote® &amp; Traxit</h3><div class="dur">max. 2:00 min</div></div></div>
+      <div class="short"><div class="ph globe"><span>China</span><i></i><span>USA</span></div><div class="txt"><div class="top"><span class="kind">Kurzfilm</span><span class="badge o">C</span></div><h3>SurTec global: China &amp; USA</h3><div class="dur">max. 2:00 min</div></div></div>
     </div>
   </div>
 
@@ -380,7 +386,11 @@ table{width:100%;border-collapse:collapse}
   </div>
 
   <div class="concept">
-    <div class="ph" style="--img:url('assets/01_hero_macro.jpg')"><span class="cap">Visualisierung · EYELIKE</span></div>
+    <div class="reveal">
+      <div class="ph" style="--img:url('assets/02_chrome_handle.jpg')"><span class="tag">Alltag</span></div>
+      <div class="ph" style="--img:url('assets/03_crystal_dive.jpg')"><span class="tag">Unter der Oberfläche</span></div>
+      <span class="cap-out">Bildbeispiel Leitidee: vom Alltag unter die Oberfläche · Visualisierung EYELIKE</span>
+    </div>
     <ul class="steps-list">
       <li><b>Ideenfindung &amp; Leitidee</b><span>Die eine Geschichte, die alle fünf Filme verbindet – entwickelt aus Ihren Themen und Kernbotschaften.</span></li>
       <li><b>Storyline &amp; Dramaturgie</b><span>Aufbau und Spannungsbogen für den Imagefilm und jeden der vier Kurzfilme.</span></li>
@@ -432,12 +442,12 @@ table{width:100%;border-collapse:collapse}
   </div>
 
   <div class="strip">
-    <div class="ph" style="--img:url('assets/12_bts.jpg')"><span class="cap">Visualisierung · EYELIKE</span></div>
-    <div class="ph" style="--img:url('assets/14_labor.jpg')"></div>
+    <div class="ph" style="--img:url('assets/05_vorbehandlung.jpg')"><span class="cap">Visualisierung · EYELIKE</span></div>
     <div class="ph" style="--img:url('assets/04_teilereinigung.jpg')"></div>
   </div>
 
-  <div class="grid2 sec" style="margin-top:5mm">
+
+  <div class="grid2 sec" style="margin-top:6mm">
     <div class="card">
       <span class="label">So arbeiten unsere Partnerteams</span>
       <h3>Einheitliche Vorgaben an allen Standorten</h3>
@@ -661,7 +671,7 @@ table{width:100%;border-collapse:collapse}
     <div class="cond"><b>Gültigkeit</b>Dieses Angebot ist gültig bis 15.12.2026.</div>
   </div>
 
-  <div class="ph closing" style="--img:url('assets/02_chrome_handle.jpg')">
+  <div class="ph closing" style="--img:url('assets/01_hero_macro.jpg')">
     <div class="shade"></div>
     <span class="eyebrow">Gemeinsam</span>
     <h2>Machen wir sichtbar,<br>was SurTec ausmacht.</h2>
