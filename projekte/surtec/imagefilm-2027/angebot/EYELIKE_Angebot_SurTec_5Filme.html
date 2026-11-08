@@ -187,13 +187,15 @@ p{color:var(--dim)}
 table{width:100%;border-collapse:collapse}
 .price th{font-size:7pt;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--faint);text-align:left;padding:0 0 2.4mm;border-bottom:1px solid var(--ink)}
 .price th.r,.price td.r{text-align:right;white-space:nowrap;padding-right:3mm}
-.price td{padding:2mm 0;border-bottom:1px solid var(--line);vertical-align:baseline}
+.price td{padding:1.7mm 0;border-bottom:1px solid var(--line);vertical-align:baseline}
 .price td .t{font-weight:700;color:var(--ink);font-size:9pt}
-.price td .s{font-size:7.6pt;color:var(--dim);margin-top:.6mm;line-height:14px;max-width:135mm}
+.price td .s{font-size:7.6pt;color:var(--dim);margin-top:.6mm;line-height:14px;max-width:148mm}
 .price td.r{font-weight:500;font-size:9.2pt;color:var(--ink);padding-left:4mm}
 .price tr.key td .t{font-size:9.6pt}
+.price td.r .reg{display:block;font-size:7.6pt;font-weight:400;color:var(--faint);text-decoration:line-through;margin-bottom:.4mm}
+.price td.r .disc{display:block;margin-top:.8mm;font-size:6.4pt;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--red-text)}
 .price tr.key td .t::after{content:"Schwerpunkt";margin-left:2.5mm;font-size:6.2pt;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--red-text);vertical-align:1px}
-.total{margin-top:5mm;background:var(--dark);color:#fff;border-radius:3px;padding:5mm 7mm;display:flex;justify-content:space-between;align-items:center;gap:6mm;position:relative;overflow:hidden}
+.total{margin-top:4mm;background:var(--dark);color:#fff;border-radius:3px;padding:5mm 7mm;display:flex;justify-content:space-between;align-items:center;gap:6mm;position:relative;overflow:hidden}
 .total .glow{position:absolute;width:70mm;height:70mm;left:-20mm;top:-30mm;border-radius:50%;background:radial-gradient(circle,rgba(229,9,20,.32),rgba(229,9,20,0) 62%)}
 .total .l{position:relative;flex:1}
 .total .l .k{font-size:7pt;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.72)}
@@ -201,7 +203,7 @@ table{width:100%;border-collapse:collapse}
 .total .l .s{font-size:7.6pt;color:rgba(255,255,255,.78);margin-top:1.4mm;line-height:14px}
 .total .amt{position:relative;white-space:nowrap;font-size:16pt;font-weight:500;letter-spacing:-.02em;line-height:1}
 .total .amt small{font-size:9pt;font-weight:500;margin-left:1.2mm;color:rgba(255,255,255,.8)}
-.bars{margin-top:4mm}
+.bars{margin-top:3mm}
 .bar{margin-top:3.2mm}
 .bar .row{display:flex;justify-content:space-between;font-size:8pt;font-weight:600;color:var(--ink)}
 .bar .track{margin-top:1.6mm;height:3.4mm;background:var(--surface2);border-radius:2px;overflow:hidden}
@@ -290,7 +292,7 @@ table{width:100%;border-collapse:collapse}
     <div class="shade"></div>
     <div class="vf"><i></i><i></i><i></i><i></i></div>
     <div class="hud tl"><span class="rec"></span>REC</div>
-    <div class="hud tr">UHD · 16:9 · EN · UT EN/DE</div>
+    <div class="hud tr">UHD · 16:9 · EN</div>
     <div class="stats">
       <div class="stat"><div class="n r">5</div><div class="t">Filme</div><div class="d">1 Imagefilm<br>4 Kurzfilme</div></div>
       <div class="stat"><div class="n">6</div><div class="t">Drehtage</div><div class="d">4 mit EYELIKE-Team<br>2 mit Partnerteams</div></div>
@@ -347,7 +349,7 @@ table{width:100%;border-collapse:collapse}
 
   <div class="spec">
     <div><span class="label">Format</span><div class="v">16:9 · UHD-Master<br>+ Web-Fassung</div></div>
-    <div><span class="label">Sprache</span><div class="v">Englisch<br>Untertitel EN/DE</div></div>
+    <div><span class="label">Sprache</span><div class="v">Englisch<br>Untertitel optional</div></div>
     <div><span class="label">Abstimmung</span><div class="v">2 Korrekturschleifen<br>je Film</div></div>
     <div><span class="label">Musik</span><div class="v">lizenziert für Ihre<br>Kommunikation</div></div>
   </div>
@@ -500,12 +502,13 @@ table{width:100%;border-collapse:collapse}
   <table class="price" style="margin-top:6mm">
     <thead><tr><th>Leistung</th><th class="r">Preis netto</th></tr></thead>
     <tbody>
-      <tr class="key"><td><div class="t">Konzeption &amp; Kreation</div><div class="s">Ideenfindung und Leitidee, Storyline und Dramaturgie für fünf Filme, Interviewkonzept, Drehplan und Shotlists, Briefing der Partnerteams, Kickoff-Workshop und Abstimmung mit SurTec</div></td><td class="r">11.000&nbsp;€</td></tr>
+      <tr class="key"><td><div class="t">Konzeption &amp; Kreation</div><div class="s">Ideenfindung und Leitidee, Storyline und Dramaturgie für fünf Filme, Interviewkonzept, Drehplan und Shotlists, Briefing der Partnerteams, Kickoff-Workshop und Abstimmung mit SurTec</div></td><td class="r"><span class="reg">16.000&nbsp;€</span>8.000&nbsp;€<span class="disc">−50&nbsp;% Partnerrabatt</span></td></tr>
       <tr><td><div class="t">Dreh Deutschland &amp; Italien</div><div class="s">4 Drehtage mit dem EYELIKE-Team (3&nbsp;Personen, bis 10&nbsp;h) · Kamera-, Licht-, Ton- und Drohnentechnik</div></td><td class="r">10.000&nbsp;€</td></tr>
       <tr><td><div class="t">Dreh China &amp; USA</div><div class="s">2 Partner-Drehtage · Remote-Regie, Datentransfer, Übersetzung</div></td><td class="r">4.000&nbsp;€</td></tr>
       <tr><td><div class="t">Reise, Logistik &amp; Unterbringung</div><div class="s">Transporte zu allen Drehorten inkl. Inlandsflug USA, Übernachtung und Verpflegung</div></td><td class="r">3.500&nbsp;€</td></tr>
-      <tr><td><div class="t">Postproduktion Imagefilm</div><div class="s">Schnitt, Grading, Sounddesign, Musik, Design-Kit, Untertitel EN/DE</div></td><td class="r">7.000&nbsp;€</td></tr>
-      <tr><td><div class="t">Postproduktion vier Kurzfilme</div><div class="s">Schnitt, Grading, Sound, Musik, Untertitel EN/DE · inkl. Animation</div></td><td class="r">9.500&nbsp;€</td></tr>
+      <tr><td><div class="t">KI-Bildwelten</div><div class="s">Alltags- und Anwendungsbilder, wo Kundenteile nicht gezeigt werden dürfen · inkl. Generierungs- und Lizenzkosten</div></td><td class="r">3.000&nbsp;€</td></tr>
+      <tr><td><div class="t">Postproduktion Imagefilm</div><div class="s">Schnitt, Grading, Sounddesign, Musik, Design-Kit</div></td><td class="r">7.000&nbsp;€</td></tr>
+      <tr><td><div class="t">Postproduktion vier Kurzfilme</div><div class="s">Schnitt, Grading, Sound, Musik · inkl. Animation</div></td><td class="r">9.500&nbsp;€</td></tr>
       <tr><td><div class="t">Produktionsleitung &amp; Partnerteams</div><div class="s">Steuerung und Qualitätssicherung der Partnerteams, Lieferplan und gestaffelte Abnahmen bis Januar 2028</div></td><td class="r">4.000&nbsp;€</td></tr>
     </tbody>
   </table>
@@ -527,7 +530,7 @@ table{width:100%;border-collapse:collapse}
 
   <div class="note" style="margin-top:4mm">
     <h3>Bewusst unter dem regulären Projektwert kalkuliert</h3>
-    <p>Wir sehen SurTec als langfristigen Partner. Deshalb verzichten wir auf Gewinnaufschlag und Risikopuffer und bringen zusätzlich einen Teil unserer eigenen Leistung als Investition ein. Für Sie heißt das: Der Preis ist verbindlich, das Kalkulationsrisiko tragen wir. Der Leistungsumfang ist genau beschrieben – Sie wissen vorab, was Sie bekommen. Alles, was darüber hinausgeht, erhalten Sie zu festen Preisen.</p>
+    <p>Wir sehen SurTec als langfristigen Partner. Deshalb verzichten wir auf Gewinnaufschlag und Risikopuffer und bringen zusätzlich einen Teil unserer eigenen Leistung als Investition ein. Für Sie heißt das: Der Preis ist verbindlich, das Kalkulationsrisiko tragen wir – und alles, was über den beschriebenen Umfang hinausgeht, erhalten Sie zu festen Preisen.</p>
   </div>
 
   <footer class="foot"><span>EYELIKE · Angebot Imagefilm SurTec 2027</span><span class="pg">5</span></footer>
@@ -548,11 +551,11 @@ table{width:100%;border-collapse:collapse}
   <table class="cmp" style="margin-top:5.5mm">
     <thead><tr><th>Leistung</th><th>Juni-Angebot<br>1 Film · DE + IT</th><th class="new">Jetzt<br>5 Filme · DE · IT · CN · US</th></tr></thead>
     <tbody>
-      <tr><td>Konzeption</td><td><b>7.000&nbsp;€</b>für einen Film</td><td><b>11.000&nbsp;€</b>Leitidee und Dramaturgie für fünf Filme</td></tr>
+      <tr><td>Konzeption</td><td><b>7.000&nbsp;€</b>für einen Film</td><td><b>8.000&nbsp;€</b>regulär 16.000&nbsp;€, 50&nbsp;% Partnerrabatt</td></tr>
       <tr><td>Drehtage</td><td><b>19.200&nbsp;€</b>6 EYELIKE-Drehtage</td><td><b>14.000&nbsp;€</b>4 EYELIKE- und 2 Partner-Drehtage</td></tr>
       <tr><td>Reise &amp; Logistik</td><td><b>2.900&nbsp;€</b>Rundreise DE + Italien</td><td><b>3.500&nbsp;€</b>inkl. Übernachtung und Verpflegung</td></tr>
-      <tr><td>Bildwelten &amp; CGI</td><td><b>2.400&nbsp;€</b></td><td><b>entfällt</b>Budget fließt in die fünf Filme</td></tr>
-      <tr><td>Postproduktion</td><td><b>17.500&nbsp;€</b>1 Film + 3 Cutdowns, Untertitel in 9 Sprachen</td><td><b>16.500&nbsp;€</b>Imagefilm + 4 Kurzfilme, Untertitel EN/DE · weitere Sprachen und Cutdowns als Erweiterung</td></tr>
+      <tr><td>KI-Bildwelten</td><td><b>2.400&nbsp;€</b>für einen Film</td><td><b>3.000&nbsp;€</b>für fünf Filme, inkl. Generierungskosten</td></tr>
+      <tr><td>Postproduktion</td><td><b>17.500&nbsp;€</b>1 Film + 3 Cutdowns, Untertitel in 9 Sprachen</td><td><b>16.500&nbsp;€</b>Imagefilm + 4 Kurzfilme · Untertitel und Cutdowns als Erweiterung</td></tr>
       <tr><td>Produktionsleitung</td><td><b>–</b>nicht separat ausgewiesen</td><td><b>4.000&nbsp;€</b>Partnerteams in zwei Ländern, gestaffelte Lieferung</td></tr>
       <tr class="fp"><td>Preis</td><td><b>49.000&nbsp;€</b></td><td><b>49.000&nbsp;€</b></td></tr>
       <tr><td>Übernachtung &amp; Verpflegung</td><td><b>zusätzlich nach Aufwand</b></td><td><b>inklusive</b></td></tr>
@@ -567,8 +570,8 @@ table{width:100%;border-collapse:collapse}
     <h2 style="font-size:16pt">Planbar über zwei Budgetjahre</h2>
   </div>
   <div class="pay">
-    <div class="payc"><span class="label">Erste Teilrechnung</span><div class="amt">28.500&nbsp;€</div><p>Konzeption, sechs Drehtage inkl. Partnerteams, Reise und Unterbringung</p><div class="when">Rechnung im Januar 2027 · zahlbar vor dem ersten Drehtag</div></div>
-    <div class="payc"><span class="label">Zweite Teilrechnung</span><div class="amt">11.500&nbsp;€</div><p>Postproduktion Imagefilm und erster Kurzfilm, anteilig Produktionsleitung</p><div class="when">Bei Lieferung Imagefilm + erster Kurzfilm · spätestens Dezember 2027</div></div>
+    <div class="payc"><span class="label">Erste Teilrechnung</span><div class="amt">25.500&nbsp;€</div><p>Konzeption, sechs Drehtage inkl. Partnerteams, Reise und Unterbringung</p><div class="when">Rechnung im Januar 2027 · zahlbar vor dem ersten Drehtag</div></div>
+    <div class="payc"><span class="label">Zweite Teilrechnung</span><div class="amt">14.500&nbsp;€</div><p>KI-Bildwelten, Postproduktion Imagefilm und erster Kurzfilm, anteilig Produktionsleitung</p><div class="when">Bei Lieferung Imagefilm + erster Kurzfilm · spätestens Dezember 2027</div></div>
     <div class="payc"><span class="label">Schlussrechnung</span><div class="amt">9.000&nbsp;€</div><p>Übrige drei Kurzfilme, anteilig Produktionsleitung</p><div class="when">Rechnung im Januar 2028 · nach Lieferung aller Filme</div></div>
   </div>
   <p class="small" style="margin-top:3mm">Erste und zweite Teilrechnung zusammen 40.000&nbsp;€ im Budget 2027, Schlussrechnung 9.000&nbsp;€ im Januar 2028. Zahlbar innerhalb von 14&nbsp;Tagen ohne Abzug; die erste Teilrechnung in jedem Fall vor dem ersten Drehtag.</p>
@@ -605,20 +608,20 @@ table{width:100%;border-collapse:collapse}
     <div class="pkg">
       <span class="label">Formate</span>
       <h3>Hochformat-Paket</h3>
-      <ul><li>alle vier Kurzfilme zusätzlich in 9:16</li><li>für LinkedIn, Instagram und Stories</li><li>untertitelt</li></ul>
+      <ul><li>alle vier Kurzfilme zusätzlich in 9:16</li><li>für LinkedIn, Instagram und Stories</li><li>Bildausschnitt neu gestaltet</li></ul>
       <div class="p"><span>Paketpreis</span><b>2.500&nbsp;€</b></div>
     </div>
     <div class="pkg">
       <span class="label">Sprachen</span>
-      <h3>Sprachen-Paket Basis</h3>
-      <ul><li>drei weitere Untertitelsprachen</li><li>für alle fünf Filme</li><li>Übersetzung und Einbau</li></ul>
-      <div class="p"><span>Paketpreis</span><b>1.700&nbsp;€</b></div>
+      <h3>Untertitel-Paket</h3>
+      <ul><li>Untertitel Englisch und Deutsch</li><li>für alle fünf Filme</li><li>als Datei und eingebrannt</li></ul>
+      <div class="p"><span>Paketpreis</span><b>900&nbsp;€</b></div>
     </div>
     <div class="pkg">
       <span class="label">Sprachen</span>
-      <h3>Sprachen-Paket Komplett</h3>
-      <ul><li>sieben weitere Untertitelsprachen</li><li>insgesamt neun Sprachen</li><li>für alle fünf Filme</li></ul>
-      <div class="p"><span>Paketpreis</span><b>3.900&nbsp;€</b></div>
+      <h3>Sprachen-Paket</h3>
+      <ul><li>Untertitel in bis zu neun Sprachen</li><li>inklusive Englisch und Deutsch</li><li>für alle fünf Filme</li></ul>
+      <div class="p"><span>Paketpreis</span><b>4.500&nbsp;€</b></div>
     </div>
     <div class="pkg">
       <span class="label">Fotografie</span>
@@ -670,7 +673,7 @@ table{width:100%;border-collapse:collapse}
   <div class="conds">
     <div class="cond"><b>Preise</b>Alle Preise netto zzgl. gesetzlicher USt. Das Gesamtpaket umfasst alle hier beschriebenen Leistungen inklusive Reise, Übernachtung und Verpflegung.</div>
     <div class="cond"><b>Bestellung</b>Bestellung über 49.000&nbsp;€ netto mit Bezug auf dieses Angebot vom 09.11.2026. Angebot und Zahlungsplan sind Bestandteil der Bestellung; bitte je Teilrechnung die Kostenstelle angeben.</div>
-    <div class="cond"><b>Verbindlichkeit</b>Verbindlich ist diese Leistungsbeschreibung. Konzept und Drehplan vom Juni 2026 dienen als kreative Referenz; Leistungen daraus, die hier nicht beschrieben sind (u.&nbsp;a. Sprecher, Cutdowns, weitere Untertitelsprachen, Fotografie), sind nicht enthalten und als Erweiterung buchbar.</div>
+    <div class="cond"><b>Verbindlichkeit</b>Verbindlich ist diese Leistungsbeschreibung. Konzept und Drehplan vom Juni 2026 dienen als kreative Referenz; Leistungen daraus, die hier nicht beschrieben sind (u.&nbsp;a. Sprecher, Cutdowns, Untertitel, Fotografie), sind nicht enthalten und als Erweiterung buchbar.</div>
     <div class="cond"><b>Themen &amp; Material</b>Mit der Freigabe des Drehplans stehen die Themen der Kurzfilme fest. Alle Filme entstehen aus dem Material der sechs Drehtage und dem vereinbarten Animationsanteil.</div>
     <div class="cond"><b>Feedback &amp; Freigabe</b>Zwei Korrekturschleifen je Film (Rohschnitt, Feinschnitt), Feedback gebündelt über eine Ansprechpartnerin. Damit Freigaben zügig laufen, sehen alle Freigebenden spätestens den Rohschnitt. Rückmeldung innerhalb von 10&nbsp;Werktagen.</div>
     <div class="cond"><b>Termine</b>Drehtermine sind bis 10&nbsp;Werktage vorher kostenfrei verschiebbar. Danach berechnen wir nur bereits entstandene, nicht stornierbare Kosten.</div>

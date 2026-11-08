@@ -16,18 +16,21 @@ Das Angebot bleibt bei **49.000 € netto inklusive Reise, Übernachtung und Ver
 
 | Position | € |
 |---|---:|
-| Konzeption & Kreation (Schwerpunkt) | 11.000 |
+| Konzeption & Kreation (regulär 16.000, −50 % Partnerrabatt) | 8.000 |
 | Dreh Deutschland & Italien | 10.000 |
 | Dreh China & USA | 4.000 |
 | Reise, Logistik & Unterbringung | 3.500 |
+| KI-Bildwelten (inkl. Generierungs- und Lizenzkosten) | 3.000 |
 | Postproduktion Imagefilm | 7.000 |
 | Postproduktion vier Kurzfilme | 9.500 |
 | Produktionsleitung & Partnerteams | 4.000 |
 
 **Zahlungsplan:**
-- Erste Teilrechnung 28.500 € (Januar 2027, vor dem ersten Drehtag)
-- Zweite Teilrechnung 11.500 € (Lieferung Imagefilm + erster Kurzfilm)
+- Erste Teilrechnung 25.500 € (Januar 2027, vor dem ersten Drehtag)
+- Zweite Teilrechnung 14.500 € (Lieferung Imagefilm + erster Kurzfilm)
 - Schlussrechnung 9.000 € (spätestens 31.01.2028)
+
+**Änderung 08.11. (spät):** Untertitel sind nicht mehr im Paket (Erweiterung: EN/DE 900 €, bis neun Sprachen 4.500 €). KI-Generierungskosten intern realistisch ca. 1.200 € (Credits, Lizenzen, Upscaling) statt 500 € angesetzt. Selbstkosten damit ca. 62.400 € (Max 900 €/PT), Ergebnis bei 49.000 € ca. −13.400 €.
 
 **Hinweis:** Verpflegung am Set an der Bergstraße ist nicht mehr SurTec-Beistellung (sonst Widerspruch zu „all-in“). Zusatzkosten für EYELIKE ca. 200–300 €.
 
