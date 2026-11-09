@@ -1,11 +1,11 @@
-# Call-Leitfaden: SurTec Imagefilm 2027 – Themen und Spielregeln
+# Call-Leitfaden: SurTec Imagefilm 2027 – Themen und Fahrplan
 
 **Intern. Nicht weiterleiten, nicht teilen.**
 Sabrina Richters (Marketing, Ansprechpartnerin), Dr. Jens Krömer (ihr Chef), Max · 45 Min. · Teams · Termin laut Mail
 
 ## Ziel
 
-Am Ende stehen die vier Kurzfilm-Themen als Arbeitstitel mit Filmtyp und Drehtag, die Spielregeln für Änderungen und Freigaben und der Weg zur Bestellung fest. Max schickt innerhalb von 24 Stunden den Leistungsrahmen, verbindlich wird er mit der Bestellung.
+Am Ende stehen die vier Kurzfilm-Themen als Arbeitstitel mit Filmtyp und Drehtag, der Fahrplan für Änderungen und Freigaben und der Weg zur Bestellung fest. Max schickt innerhalb von 24 Stunden den Leistungsrahmen, verbindlich wird er mit der Bestellung.
 
 **Grundsatz:** Wir legen den Rahmen fest, nicht die Fakten. Sabrina macht die Detailkonzeption erst nach der Budgetfreigabe („Das ist dann Step 2“). Alles, was sie nicht aus dem Kopf weiß, kommt ohne Nachhaken als „klärt SurTec bis zum Kickoff“ in den Rahmen.
 
@@ -22,7 +22,7 @@ Am Ende stehen die vier Kurzfilm-Themen als Arbeitstitel mit Filmtyp und Drehtag
 | 00–04 | Einstieg: Dank, Ziel, Ablauf. Sabrina fragen, was sie für ihre Freigabe braucht | Max | Ziel geteilt |
 | 04–08 | Das Set im Überblick: erst Sabrina, dann Jens zur Gewichtung | Max, dann Sabrina und Jens | Set als Grundlage bestätigt |
 | 08–30 | Vier Kurzfilme, je ca. 5 Min.: Vorschlag, Diskussion, Richtung | Max schlägt vor, Sabrina entscheidet | Arbeitstitel, Filmtyp, Drehtag je Film |
-| 30–37 | Spielregeln: Themenwechsel, Reihenfolge, Freigabeweg | Max | Regeln bestätigt |
+| 30–37 | Fahrplan: Themenwechsel, Reihenfolge, Freigabeweg | Max | Fahrplan abgestimmt |
 | 37–40 | Zahlungsplan und Bestellung | **Sabrina** | Weg zur Bestellung klar |
 | 40–45 | Zusammenfassung, nächste Schritte, Kickoff-Termin | Max | Termine stehen |
 
@@ -91,12 +91,12 @@ Global-Film · max. 2:00 · Partner-Drehtage China und USA
 - **Ausweichthema:** derselbe Film mit dem US-Standort, den SurTec benennt.
 - **Planung:** nicht als ersten Kurzfilm liefern. In China nicht rund um das Neujahrsfest am 06.02.2027 drehen.
 
-## Spielregeln (30–37)
+## Fahrplan (30–37)
 
 | Fest, steht im Angebot | Heute festlegen |
 |---|---|
 | 1 Imagefilm (ca. 3:00, max. 3:30) und 4 Kurzfilme (je max. 2:00) | vier Arbeitstitel mit Filmtyp und Drehtag |
-| 2 Reportagen, 1 Animationsfilm (bis 45 s Animation), 1 Global-Film | Spielregel Themenwechsel |
+| 2 Reportagen, 1 Animationsfilm (bis 45 s Animation), 1 Global-Film | Regel zum Themenwechsel |
 | 6 Drehtage, je bis 10 h. Partner-Drehtage: 1 Standort, 1 Interview, keine Drohne | US-Standort, Sitz des CoC (oder offener Punkt) |
 | 16:9, UHD-Master und Web-Fassung, Englisch, Musik lizenziert | Interviewsprache (Empfehlung Englisch) |
 | 2 Korrekturschleifen je Film, Rückmeldung in 10 Werktagen | wer spätestens den Rohschnitt sieht |

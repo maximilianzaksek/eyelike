@@ -76,7 +76,7 @@ Die Termine gelten, solange Mitwirkung, Freigaben und Rückmeldungen von SurTec 
 
 ## 7. Preis und Zahlungsplan
 
-**49.000 € netto zzgl. gesetzlicher USt., Gesamtpaket all-in**, inklusive Reise, Übernachtung und Verpflegung. Im beschriebenen Umfang gibt es keine Nachforderungen.
+**49.000 € netto zzgl. gesetzlicher USt., Gesamtpaket all-in**, inklusive Reise, Übernachtung und Verpflegung.
 
 | Rechnung | Betrag netto | Für | Zeitpunkt |
 |---|---|---|---|
@@ -98,7 +98,7 @@ Als Erweiterung zu den Festpreisen aus dem Angebot (Seite 7) buchbar: Untertitel
 
 ## 10. Bestätigung
 
-Mit einer kurzen Antwort-Mail bestätigen beide Seiten, dass dieser Rahmen Themen, Lieferumfang und Spielregeln richtig beschreibt. Für SurTec bestätigt Sabrina Richters, Dr. Jens Krömer in Kopie. Verbindlich wird der Rahmen mit der Bestellung.
+Mit einer kurzen Antwort-Mail bestätigen beide Seiten, dass dieser Rahmen Themen, Lieferumfang und Absprachen richtig beschreibt. Für SurTec bestätigt Sabrina Richters, Dr. Jens Krömer in Kopie. Verbindlich wird der Rahmen mit der Bestellung.
 
 | | Name | Bestätigt per Mail am |
 |---|---|---|
