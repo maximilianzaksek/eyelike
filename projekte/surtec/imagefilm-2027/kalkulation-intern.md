@@ -196,7 +196,7 @@ Quellen: `grundlagen/marktpreise.md`
 **V2: nur 2 Tage an der Bergstraße.**
 - **Spart netto:** rund 2.060 € (DoP, Kamera B, Technik, 1 Tag Max, abzüglich eines Studio-Halbtags für das Tabletop precote/Traxit bei EYELIKE).
 - **Nur machbar mit:** höchstens 5 Interviews und Tabletop im eigenen Studio.
-- **Risiko:** Material für Imagefilm und Kurzfilm „Galvanotechnik & Innovation“ wird dünn, kein Puffer für Wetter oder CEO-Termin.
+- **Risiko:** Material für Imagefilm und Kurzfilm „Zukunftssicher: Oberflächen ohne Chrom(VI)“ (vormals „Galvanotechnik & Innovation“) wird dünn, kein Puffer für Wetter oder CEO-Termin.
 - **Einsatz:** nur als Rückfallposition, falls Sabrina auf 49.000 € all-in besteht. Für uns rechnet sich V2 dann genauso wie V1.
 
 **„Mehr Videos“ (deine Idee) nur gegen Aufpreis:**

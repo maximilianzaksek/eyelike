@@ -1,13 +1,13 @@
 # Rückfragen SurTec Imagefilm 2027
 
-**Stand:** 08.11.2026
+**Stand:** 09.11.2026
 
 Die Fragen sind in drei Stufen geordnet:
 - **A** an Max, vor dem Versand
 - **B** an Sabrina, jetzt in Mail und Telefonat
 - **C** an Sabrina im Kickoff nach der Freigabe
 
-**Warum die Themenfragen erst in C stehen:** Sabrina erarbeitet die inhaltliche Konzeption erst nach der Freigabe („Ich kann jetzt keine Konzeption erarbeiten, wenn ich noch gar nicht weiß, ob wir das Geld kriegen“). Deshalb legen wir die Kurzfilme jetzt über das **Format** fest (Typ A/B/C), nicht über das Thema.
+**Themen:** Sabrina erarbeitet die inhaltliche Konzeption erst nach der Freigabe („Ich kann jetzt keine Konzeption erarbeiten, wenn ich noch gar nicht weiß, ob wir das Geld kriegen“). Seit 09.11. legen wir deshalb im Call nur **Arbeitstitel, Filmtyp und Drehtag** fest (Vorschlag von EYELIKE, ohne Vorarbeit für SurTec). Die Detailfragen unten bleiben für den Kickoff.
 
 ---
 
@@ -60,11 +60,11 @@ Die ersten drei Fragen stehen in der Mail, die übrigen klären wir im Telefonat
 
 **Die vier Kurzfilme**
 
-4. Welche vier Themen? Bestätigung oder Änderung unseres Vorschlags:
-   - CoC Italien
-   - Galvanotechnik & Innovation
-   - precote & Traxit (animiert)
-   - Global China & USA
+4. Die vier Themen werden im Call zu dritt als Arbeitstitel festgelegt (siehe `call-leitfaden.md`), tauschbar bis zur Drehplan-Freigabe:
+   - Centre of Competence Italien
+   - Zukunftssicher: Oberflächen ohne Chrom(VI)
+   - Neue Felder: precote® & Traxit (animiert)
+   - SurTec global: China & USA
 5. **Centre of Competence Italien:**
    - Was genau passiert dort (Anodisieren/Aluminium, Kundenversuche, Schulung, Entwicklung)?
    - Wer erzählt es? Auf Englisch oder Italienisch?

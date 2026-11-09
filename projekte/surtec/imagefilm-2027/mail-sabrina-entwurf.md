@@ -1,42 +1,46 @@
-# Mail an Sabrina – Entwurf v4
+# Mail an Sabrina, CC Jens – Entwurf v5
 
-**Versand:** mit dem Angebot als PDF im Anhang (`angebot/EYELIKE_Angebot_SurTec_5Filme.pdf`)
-**Betreff:** SurTec Imagefilm 2027 – unser Angebot für 5 Filme
+**Stand:** 09.11.2026 · ersetzt v4 (v4 ohne Call-Vorschlag, nur an Sabrina)
+
+**An:** Sabrina Richters
+**CC:** Dr. Jens Krömer
+**Anhang:** `angebot/EYELIKE_Angebot_SurTec_5Filme.pdf`
+**Betreff:** SurTec Imagefilm 2027: Angebot für fünf Filme und Call zu dritt
 
 ---
 
-Hallo Sabrina,
+Hallo Sabrina, hallo Jens,
 
-danke für Deine Geduld, und noch einmal danke, dass Du Dich beim Management und im Controlling so für das Projekt eingesetzt hast. Ich wollte Dir kein schnelles Papier schicken, sondern eines, das Du direkt für Deine Freigabe nutzen kannst. Du findest es im Anhang.
+Sabrina, danke für Deine Geduld. Anbei unser Angebot für das Fünf-Filme-Paket, so aufgebaut, dass Du es direkt für die interne Freigabe nutzen kannst. Deine Idee, aus einer Produktion fünf Filme zu machen, haben wir damit konsequent umgesetzt.
 
-**Kurz zusammengefasst:**
+Das Paket in Kürze: ein Imagefilm und vier Kurzfilme aus sechs Drehtagen in vier Ländern, **49.000 € netto all-in**. Der Preis ist fest, im beschriebenen Umfang gibt es keine Nachforderungen. Wir haben ihn bewusst unter unserem regulären Projektwert kalkuliert, weil wir SurTec als langfristigen Partner sehen.
 
-- **5 Filme:** ein übergreifender Imagefilm (ca. 3 Minuten) und vier eigenständige Kurzfilme (je max. 2 Minuten)
-- **6 Drehtage:** drei an der Bergstraße und einer in Soliera mit unserem Team, dazu je einer in China und den USA mit unseren Partnerteams
-- **Gesamtpaket: 49.000 € netto, all-in**, also inklusive Reise, Übernachtung und Verpflegung. Übernachtung und Verpflegung wären im Juni-Angebot noch nach Aufwand dazugekommen.
-- **Zahlung:** 40.000 € im Budget 2027, die restlichen 9.000 € im Januar 2028
+Wie am Donnerstag besprochen, würde ich das gern einmal zu dritt mit Euch anschauen. Dabei möchte ich zwei Dinge festlegen:
 
-Ich will offen mit Dir sein: An diesem Projekt verdienen wir nichts. Das Paket liegt rund 23.000 € unter unserem regulären Projektwert von rund 72.000 €: ohne Gewinnaufschlag, ohne Risikopuffer, und einen Teil unserer Arbeit bringen wir selbst ein. Das machen wir bewusst, weil wir SurTec als langfristigen Partner sehen und an dieses Projekt glauben. Es heißt aber auch, dass der Rahmen keinen Spielraum hat. Deshalb haben wir den Umfang sehr genau beschrieben. So wisst Ihr genau, was Ihr bekommt, und alles, was darüber hinausgeht, machen wir gern, zu festen Preisen, die Ihr vorher kennt.
+**1. Die Themen der vier Kurzfilme.** Unser Vorschlag, so auch im Angebot:
 
-An der Qualität sparen wir dabei nicht, wir sparen an Wegen: Animation statt Drehreisen nach München und Schwelm, Partnerteams vor Ort statt Flügen nach China und in die USA. Den Schwerpunkt legen wir auf die Konzeption, also auf eine Leitidee und Dramaturgie, die alle fünf Filme trägt.
+- **Centre of Competence Italien**
+  Anodisieren von Aluminium, vom Entfetten bis zum Verdichten
+- **Zukunftssicher: Oberflächen ohne Chrom(VI)**
+  Korrosionsschutz und Optik, entwickelt und geprüft in Zwingenberg
+- **Neue Felder: precote® & Traxit**
+  Musterteile und Animation zeigen, was im Gewinde und im Ziehstein passiert
+- **SurTec global: China & USA**
+  SurTec vor Ort, wo Kund:innen in Asien und Nordamerika produzieren
 
-**Damit es für beide Seiten sauber läuft:**
+Zusammen decken die vier Filme das Kompetenzzentrum, das Kerngeschäft, die neuen Felder und die internationale Präsenz ab. Vorbereiten müsst Ihr dafür nichts. Wir legen Arbeitstitel und Kernaussage fest, die Detailarbeit mit Protagonist:innen und Drehplan bleibt in der Konzeption nach Eurer Freigabe. Bis zur Freigabe des Drehplans könnt Ihr jedes Thema ohne Mehrkosten tauschen.
 
-1. **Fester Lieferumfang, offene Themen.** Die Themen der vier Kurzfilme legen wir gemeinsam in der Konzeption fest. Dafür haben wir drei Filmtypen definiert: Standort-Reportage, Animationsfilm und Global-Film. Einen Vorschlag zur Belegung findest Du im Angebot, etwa das Centre of Competence in Italien.
-2. **Feedback und Freigabe.** Zwei Korrekturschleifen pro Film und gebündeltes Feedback über Dich. Am besten ist das Management schon beim Rohschnitt dabei.
-3. **Bestellung und Zahlungsplan.** Eine Bestellung über die volle Summe vor dem Start. Die erste Teilrechnung (Januar 2027) deckt Konzeption und Drehtage ab, so wie Du es vorgeschlagen hast.
+**2. Die Spielregeln für die Umsetzung.** Was wir liefern und was es kostet, steht verbindlich im Angebot. Im Call klären wir Reihenfolge, Freigabewege und Termine. Das Ergebnis fasse ich danach kompakt als Leistungsrahmen zusammen, er wird mit der Bestellung verbindlich. So wisst Ihr genau, was Ihr bekommt, und wir wissen genau, was wir liefern.
 
-**Drei kurze Fragen:**
+Für 45 Minuten per Teams schlage ich vor:
 
-1. **China und USA:** Wir gehen von Hangzhou und Brunswick (Ohio) aus. Passt das, und wer ist dort Ansprechpartner:in?
-2. **Restbetrag:** Kann die zweite Kostenstelle bzw. das Budget 2028 die 9.000 € tragen? Wir würden die Schlussrechnung im Januar 2028 stellen.
-3. **Bestellung:** Kann die Bestellung über die vollen 49.000 € laufen, auch wenn die Schlussrechnung erst Ende 2027 oder Anfang 2028 fällig wird?
+- Mi, 11.11., [10:00] Uhr
+- Do, 12.11., [14:00] Uhr
+- Fr, 13.11., [09:30] Uhr
 
-Alles Inhaltliche, also Themen, Protagonist:innen und das Centre of Competence, klären wir nach Deiner Freigabe in Ruhe im Kickoff. Die Fragenliste dafür habe ich schon vorbereitet.
+Sabrina, sag mir gern, was Euch passt, dann schicke ich die Einladung.
 
-Hast Du heute oder morgen 30 Minuten? Dann gehen wir das Angebot gemeinsam durch, und Du kannst es direkt weitergeben.
-
-Ich freue mich sehr auf das Projekt!
+Ich freue mich auf das Projekt!
 
 Viele Grüße
 Max
@@ -44,14 +48,25 @@ Max
 Maximilian Zaksek
 Geschäftsführer & Creative Director
 EYELIKE
+max@eyelike.agency · 0176 47138405
 
 ---
 
 ## Hinweise für Max (nicht mitschicken)
 
-- **Vor dem Versand:** diesen Abschnitt löschen.
-- **Erweiterungen sind der Hebel für Marge:** LinkedIn-Paket, Social-Cutdowns, Hochformat, Sprachen, Foto. Im Kickoff aktiv anbieten, nicht verschenken.
-- **Animation:** gegenüber SurTec nur „Animation“, keine Werkzeuge nennen.
-- **Agenturstimme:** „wir“, „unser Team“, „unsere Partnerteams“.
-- **Offene Rechnungen:** als **separate** Mail am selben Tag, sachlich, mit Liste.
-- **Im Telefonat nicht sagen:** „eigentlich zu wenig“, „verkalkuliert“, „mein Mentor meint“, „leider“, „nur für Dich“.
+**Vor dem Versand**
+- **Sabrina kurz vorwarnen** (Anruf oder WhatsApp, 30 Sekunden): „Ich schick Dir gleich das Angebot und nehm Jens in CC, wir wollten ja zu dritt drüberschauen.“ Ein Chef in CC ohne Ankündigung kann sich anfühlen, als ginge es an ihr vorbei.
+- **Uhrzeiten** in den eckigen Klammern mit Deinem Kalender abgleichen. Falls Freudenberg externe Teams-Einladungen blockt, lädt Sabrina ein.
+- **Persönliche Zeile an Jens** nur, wenn Sabrina beim Vorab-Anruf entspannt ist, z. B. „Jens, schön, dass wir das jetzt wie besprochen zu dritt angehen.“ Die Mail erwähnt das Pizza-Gespräch bewusst nicht. Schriftlich und vor Sabrina würde es einen Draht an ihr vorbei zeigen.
+- **Falls Du Jens siezt:** Anrede „Hallo Sabrina, hallo Herr Dr. Krömer,“. Dann „Ihr/Euch“ ersetzen: „Vorbereiten muss dafür niemand etwas“, „nach der Freigabe durch SurTec“, „kann SurTec jedes Thema … tauschen“, „So weiß SurTec genau, was es bekommt“, „sag mir gern, welcher Termin passt“. Die Sätze an Sabrina bleiben im Du.
+
+**Was bewusst nicht drinsteht**
+- **Keine Budgetaufteilung** (40.000 € 2027, 9.000 € aus einer anderen Kostenstelle 2028). Sabrina steuert selbst, was ans Management geht. Jens kennt die Aufteilung („Ich habe das mit Jens besprochen“). Das PDF zeigt den Zahlungsplan auf Seite 1 und 6. Was Sabrina intern weitergibt, entscheidet sie.
+- **Kein „wir verdienen nichts“.** Mit dem Chef in CC reicht „bewusst unter dem regulären Projektwert“.
+- **Kein Untertitel „The Architecture of Anodizing“.** Sabrina hat den Claim der Italiener im LED-Wall-Call eher belächelt. Nur übernehmen, wenn SurTec ihn selbst will.
+- **„SurTec vor Ort“ statt „eigene Technika“.** Seit der CHEMEON-Allianz (03/2026) ist offen, wie das US-Geschäft aufgestellt ist. Den US-Standort klären wir im Call.
+- **Keine Ausweichthemen.** Die liegen im Leitfaden und kommen nur, wenn SurTec ein Thema ablehnt. Sonst wird aus der Empfehlung eine Optionsliste.
+
+**Danach**
+- **Offene Rechnungen** (Shared Service Center) als eigene Mail nur an Sabrina, nicht in diesem Thread.
+- Call vorbereiten mit `call-leitfaden.md`, mitschreiben in `leistungsrahmen-entwurf.md`.

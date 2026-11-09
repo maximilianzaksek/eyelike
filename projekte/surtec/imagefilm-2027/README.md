@@ -1,21 +1,25 @@
 # SurTec Imagefilm 2027 – Projektstand
 
-**Stand:** 08.11.2026 · **Nächster Schritt:** Max klärt die offenen Punkte (`rueckfragen.md`, Teil A), danach Angebot + Mail an Sabrina
+**Stand:** 09.11.2026 · **Nächster Schritt:** Max warnt Sabrina kurz vor, schickt Mail v5 mit Angebot (CC Jens), Call zu dritt, danach Leistungsrahmen
 
 ## Lage
 
-- **Was SurTec will:** Das Management hat 40.000 € freigegeben, dazu kommen 9.000 € aus einer zweiten Kostenstelle. Dafür will SurTec fünf Filme statt einem.
+- **Was SurTec will:** Das Management hat 40.000 € freigegeben, dazu kommen 9.000 € aus einer zweiten Kostenstelle (mit Jens abgestimmt). Dafür will SurTec fünf Filme statt einem.
 - **Was Max zugesagt hat:** am 05.11. mündlich 5 Filme, 49.000 €, 6 Drehtage in DE/IT/CN/US.
-- **Was das Juni-Angebot sagt:** Übernachtung und Verpflegung „nach Aufwand“, also nicht im Festpreis. Das Management kennt dieses Angebot.
+- **Sabrinas Ablauf:** erst Freigabe durch Controlling/Management, dann Konzeption („Step 2“). Sie wartet seit dem 05.11. auf das Angebot.
 
-## Stand Angebot (08.11.2026)
+## Stand (09.11.2026)
 
-- **Paketpreis 49.000 € netto all-in** (inkl. Reise, Übernachtung, Verpflegung), Entscheidung Max.
-- Konzeption & Kreation als Schwerpunkt (8.500 €), Erweiterungen als Pakete.
-- Gestaltetes Angebot: 8 Seiten, Logo, Bildplätze für die Juni-Bilder (Bilder fehlen noch, siehe unten).
-- Intern: Selbstkosten 62.500 € (Max 900 €/PT) → −13.500 €; Marge nur über Erweiterungen.
+- **Angebot:** 8 Seiten, 49.000 € netto all-in, neue Bildwelt (ChatGPT-Motive von Max), Themen der Kurzfilme jetzt „vor der Bestellung festgelegt, bis zur Drehplan-Freigabe ohne Mehrkosten tauschbar“.
+- **Vier Kurzfilme (Vorschlag):**
+  1. Centre of Competence Italien (Reportage, Soliera)
+  2. Zukunftssicher: Oberflächen ohne Chrom(VI) (Reportage, Bergstraße)
+  3. Neue Felder: precote® & Traxit (Animation)
+  4. SurTec global: China & USA (Partnerteams)
+- **Mail v5:** an Sabrina, CC Dr. Jens Krömer, mit Angebot und Call-Vorschlag. Ziel des Calls: Themen und Spielregeln festlegen, danach Leistungsrahmen, verbindlich mit der Bestellung.
+- **Intern:** Selbstkosten ca. 62.400 € → ca. −13.400 €; Marge nur über Erweiterungen.
 
-**Offen:** Bilder aus `Konzept & Angebot 06-2026/assets/` (Download in dieser Sitzung blockiert), Bestätigung LinkedIn-Paketpreis, Kontaktdaten, Vertraulichkeitsklausel.
+**Offen:** Bestätigung LinkedIn-Paketpreis, US-Standort (CHEMEON-Allianz), Sitz des CoC, Kontaktdaten final.
 
 ## Dateien
 
@@ -23,8 +27,10 @@
 |---|---|
 | `kalkulation-intern.md` | Selbstkosten, externe Kosten im Detail, Juni-Vergleich, Marktvergleich, Varianten, Zahlungsplan, Risiken (**nur intern**) |
 | `angebot-entwurf.md` | Leistungsbeschreibung und Preise für das kundenfähige Angebot |
-| `angebot/EYELIKE_Angebot_SurTec_5Filme.pdf` | **Gestaltetes Angebot (7 Seiten, versandfertig nach Freigabe)**, Quelle: `angebot/…html` + `angebot/fonts/` |
-| `mail-sabrina-entwurf.md` | Mail-Entwurf + Hinweise fürs Telefonat |
+| `angebot/EYELIKE_Angebot_SurTec_5Filme.pdf` | **Gestaltetes Angebot (8 Seiten, versandfertig)**, Quelle: `angebot/…html` + `angebot/fonts/` |
+| `mail-sabrina-entwurf.md` | **Mail v5** an Sabrina, CC Jens, mit Hinweisen für Max |
+| `call-leitfaden.md` | Leitfaden für den Call zu dritt (intern): Agenda, vier Themen mit Argument und Ausweichthema, Spielregeln, Einwände |
+| `leistungsrahmen-entwurf.md` | Vorlage Leistungsrahmen, im Call ausfüllen, danach an Sabrina (CC Jens) |
 | `rueckfragen.md` | offene Fragen an Max, an Sabrina jetzt, Kickoff-Fragen |
 | `grundlagen/` | Konzept-/Drehplan-Auswertung (Juni), SurTec-Standorte, Marktpreise, Reisekosten mit Quellen, Risikoregister |
 
